@@ -1,0 +1,1734 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en"><head>
+    <title>LoginManager 11.3.0 API </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="dc.created" content="2020-03-25">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../dokka-javadoc-stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../jquery/jquery-ui.css" title="Style">
+    <script type="text/javascript" src="../../../jquery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../../jquery/jquery-migrate-3.0.1.js"></script>
+    <script type="text/javascript" src="../../../jquery/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../../../search.js"></script>
+    <script async type="text/javascript" src="../../../module-search-index.js"></script>
+    <script async type="text/javascript" src="../../../package-search-index.js"></script>
+    <script async type="text/javascript" src="../../../type-search-index.js"></script>
+    <script async type="text/javascript" src="../../../member-search-index.js"></script>
+    <script async type="text/javascript" src="../../../tag-search-index.js"></script>
+</head><body>
+<script type="text/javascript">
+var pathtoroot = "../../../";
+</script>
+<noscript>
+    <div>JavaScript is disabled on your browser.</div>
+</noscript><header role="banner">
+    <nav role="navigation">
+        <div class="fixedNav">
+            <!-- ========= START OF TOP NAVBAR ======= -->
+            <div class="topNav"><a id="navbar.top">
+                <!--   -->
+            </a>
+                <div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a>
+                </div>
+                <a id="navbar.top.firstrow">
+                    <!--   -->
+                </a>
+                <ul class="navList" title="Navigation">
+    <li><a href="../../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+            <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" class="ui-autocomplete-input" autocomplete="off" placeholder="Search">
+<input type="reset" id="reset" value="reset">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ========= END OF TOP NAVBAR ========= -->
+        </div>
+        <div class="navPadding">&nbsp;</div>
+        <script type="text/javascript"><!--
+        $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+        //-->
+        </script>
+    </nav>
+</header>
+
+<main role="main">
+    <div class="header">
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <h2 title="Class LoginManager" class="title">Class LoginManager</h2>
+    </div>
+    <div class="contentContainer">
+        <!-- <ul class="inheritance">
+            <li>java.lang.Object</li>
+            <li>
+                <ul class="inheritance">
+                    <li>adaptation.Adaptation</li>
+                </ul>
+            </li>
+        </ul> TODO inheritance tree -->
+        <div class="description">
+            <ul class="blockList">
+                <li class="blockList">
+                    
+                    <hr>
+                    <pre class="wrap-overflow">
+
+public class <span class="typeNameLabel"><a href=LoginManager.html>LoginManager</a></span>
+
+                    </pre>
+                    <div class="block"><p>This class manages login and permissions for Facebook.</p></div>
+                </li>
+            </ul>
+        </div>
+        <div class="summary">
+            <ul class="blockList">
+                <li class="blockList">
+                <!-- ======== NESTED CLASS SUMMARY ======== -->
+                    
+                    <!-- =========== FIELD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="field.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Field Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Field</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  static volatile <a href=LoginManager.html>LoginManager</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#instance>instance</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=LoginBehavior.html>LoginBehavior</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#loginBehavior>loginBehavior</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=DefaultAudience.html>DefaultAudience</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#defaultAudience>defaultAudience</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#authType>authType</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#messengerPageId>messengerPageId</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#resetMessengerState>resetMessengerState</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#isFamilyLogin()>isFamilyLogin</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  boolean</code></td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#shouldSkipAccountDeduplication>shouldSkipAccountDeduplication</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+                    
+                    <!-- =========== ENUM CONSTANT SUMMARY =========== -->
+                    
+                    <!-- ========== METHOD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Method Summary</h3>
+                                <div class="memberSummary">
+                                    <div role="tablist" aria-orientation="horizontal">
+                                        <button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button>
+                                        <!-- TODO: Instance and Concrete Methods #1118 -->
+                                    </div>
+                                    <div id="memberSummary_tabpanel" role="tabpanel">
+                                    <table aria-labelledby="t0">
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Method</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>static <a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#getInstance()>getInstance</a>() </code>
+                                            </th>
+                                            <td class="colLast">Getter for the login manager.</td>
+                                        </tr>
+                                        
+                                        <tr id="i1" class="rowColor">
+                                            <td class="colFirst"><code><a href=LoginBehavior.html>LoginBehavior</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#getLoginBehavior()>getLoginBehavior</a>() </code>
+                                            </th>
+                                            <td class="colLast">Getter for the login behavior.</td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code><a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#setLoginBehavior(LoginBehavior)>setLoginBehavior</a>(<a href=LoginBehavior.html>LoginBehavior</a> loginBehavior) </code>
+                                            </th>
+                                            <td class="colLast">Setter for the login behavior.</td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code><a href=DefaultAudience.html>DefaultAudience</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#getDefaultAudience()>getDefaultAudience</a>() </code>
+                                            </th>
+                                            <td class="colLast">Getter for the default audience.</td>
+                                        </tr>
+                                        
+                                        <tr id="i4" class="altColor">
+                                            <td class="colFirst"><code><a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#setDefaultAudience(DefaultAudience)>setDefaultAudience</a>(<a href=DefaultAudience.html>DefaultAudience</a> defaultAudience) </code>
+                                            </th>
+                                            <td class="colLast">Setter for the default audience.</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#getAuthType()>getAuthType</a>() </code>
+                                            </th>
+                                            <td class="colLast">Getter for the authType</td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code><a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#setAuthType(String)>setAuthType</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> authType) </code>
+                                            </th>
+                                            <td class="colLast">Setter for the authType</td>
+                                        </tr>
+                                        
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code><a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#setMessengerPageId(String)>setMessengerPageId</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html>Nullable</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> messengerPageId) </code>
+                                            </th>
+                                            <td class="colLast">Setter for the messengerPageId</td>
+                                        </tr>
+                                        
+                                        <tr id="i8" class="altColor">
+                                            <td class="colFirst"><code><a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#setResetMessengerState(boolean)>setResetMessengerState</a>(boolean resetMessengerState) </code>
+                                            </th>
+                                            <td class="colLast">Setter for the resetMessengerState.</td>
+                                        </tr>
+                                        
+                                        <tr id="i9" class="rowColor">
+                                            <td class="colFirst"><code>boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#isFamilyLogin()>isFamilyLogin</a>() </code>
+                                            </th>
+                                            <td class="colLast">Determines whether we are using the cross Family of Apps login experience</td>
+                                        </tr>
+                                        
+                                        <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>boolean</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#getShouldSkipAccountDeduplication()>getShouldSkipAccountDeduplication</a>() </code>
+                                            </th>
+                                            <td class="colLast">Determines if we should skip deduplicating account during x-FoA login.</td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
+                                            <td class="colFirst"><code><a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#setShouldSkipAccountDeduplication(boolean)>setShouldSkipAccountDeduplication</a>(boolean shouldSkipAccountDeduplication) </code>
+                                            </th>
+                                            <td class="colLast">Setter for whether we are skipping deduplicating account during x-FoA login.</td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#resolveError(Activity,GraphResponse)>resolveError</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=../GraphResponse.html>GraphResponse</a> response) </code>
+                                            </th>
+                                            <td class="colLast">Starts the login process to resolve the error defined in the response.</td>
+                                        </tr>
+                                        
+                                        <tr id="i13" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#resolveError(Fragment,GraphResponse)>resolveError</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=../GraphResponse.html>GraphResponse</a> response) </code>
+                                            </th>
+                                            <td class="colLast">Starts the login process to resolve the error defined in the response.</td>
+                                        </tr>
+                                        
+                                        <tr id="i14" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#resolveError(Fragment,GraphResponse)>resolveError</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=../GraphResponse.html>GraphResponse</a> response) </code>
+                                            </th>
+                                            <td class="colLast">Starts the login process to resolve the error defined in the response.</td>
+                                        </tr>
+                                        
+                                        <tr id="i15" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#registerCallback(CallbackManager,FacebookCallback)>registerCallback</a>(<a href=../CallbackManager.html>CallbackManager</a> callbackManager, <a href=../FacebookCallback.html>FacebookCallback</a>&lt;<a href=LoginResult.html>LoginResult</a>&gt; callback) </code>
+                                            </th>
+                                            <td class="colLast">Registers a login callback to the given callback manager.</td>
+                                        </tr>
+                                        
+                                        <tr id="i16" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#unregisterCallback(CallbackManager)>unregisterCallback</a>(<a href=../CallbackManager.html>CallbackManager</a> callbackManager) </code>
+                                            </th>
+                                            <td class="colLast">Unregisters a login callback to the given callback manager.</td>
+                                        </tr>
+                                        
+                                        <tr id="i17" class="rowColor">
+                                            <td class="colFirst"><code><a href=LoginTargetApp.html>LoginTargetApp</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#getLoginTargetApp()>getLoginTargetApp</a>() </code>
+                                            </th>
+                                            <td class="colLast">Getter for the login target app.</td>
+                                        </tr>
+                                        
+                                        <tr id="i18" class="altColor">
+                                            <td class="colFirst"><code><a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#setLoginTargetApp(LoginTargetApp)>setLoginTargetApp</a>(<a href=LoginTargetApp.html>LoginTargetApp</a> targetApp) </code>
+                                            </th>
+                                            <td class="colLast">Setter for the login target app.</td>
+                                        </tr>
+                                        
+                                        <tr id="i19" class="rowColor">
+                                            <td class="colFirst"><code><a href=LoginManager.html>LoginManager</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#setFamilyLogin(boolean)>setFamilyLogin</a>(boolean isFamilyLogin) </code>
+                                            </th>
+                                            <td class="colLast">Setter for whether we are using cross Family of Apps login</td>
+                                        </tr>
+                                        
+                                        <tr id="i20" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logOut()>logOut</a>() </code>
+                                            </th>
+                                            <td class="colLast">Logs out the user.</td>
+                                        </tr>
+                                        
+                                        <tr id="i21" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#retrieveLoginStatus(Context,LoginStatusCallback)>retrieveLoginStatus</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context, <a href=../LoginStatusCallback.html>LoginStatusCallback</a> responseCallback) </code>
+                                            </th>
+                                            <td class="colLast">Retrieves the login status for the user.</td>
+                                        </tr>
+                                        
+                                        <tr id="i22" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#retrieveLoginStatus(Context,long,LoginStatusCallback)>retrieveLoginStatus</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context, long toastDurationMs, <a href=../LoginStatusCallback.html>LoginStatusCallback</a> responseCallback) </code>
+                                            </th>
+                                            <td class="colLast">Retrieves the login status for the user.</td>
+                                        </tr>
+                                        
+                                        <tr id="i23" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logInWithReadPermissions(Fragment,Collection)>logInWithReadPermissions</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested read permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i24" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logInWithReadPermissions(Fragment,Collection)>logInWithReadPermissions</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested read permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i25" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logInWithReadPermissions(Activity,Collection)>logInWithReadPermissions</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested read permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i26" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logInWithConfiguration(Fragment,LoginConfiguration)>logInWithConfiguration</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=LoginConfiguration.html>LoginConfiguration</a> loginConfig) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested configuration.</td>
+                                        </tr>
+                                        
+                                        <tr id="i27" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#loginWithConfiguration(Activity,LoginConfiguration)>loginWithConfiguration</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=LoginConfiguration.html>LoginConfiguration</a> loginConfig) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested configuration.</td>
+                                        </tr>
+                                        
+                                        <tr id="i28" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#reauthorizeDataAccess(Activity)>reauthorizeDataAccess</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity) </code>
+                                            </th>
+                                            <td class="colLast">Reauthorize data access</td>
+                                        </tr>
+                                        
+                                        <tr id="i29" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#reauthorizeDataAccess(Fragment)>reauthorizeDataAccess</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment) </code>
+                                            </th>
+                                            <td class="colLast">Reauthorize data access</td>
+                                        </tr>
+                                        
+                                        <tr id="i30" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logInWithPublishPermissions(Fragment,Collection)>logInWithPublishPermissions</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested publish permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i31" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logInWithPublishPermissions(Fragment,Collection)>logInWithPublishPermissions</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested publish permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i32" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logInWithPublishPermissions(Activity,Collection)>logInWithPublishPermissions</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested publish permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i33" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(Fragment,Collection)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i34" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(Fragment,Collection,String)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> loggerID) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i35" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(Fragment,Collection)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i36" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(Fragment,Collection,String)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> loggerID) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i37" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(FragmentWrapper,Collection)>logIn</a>(<a href=../internal/FragmentWrapper.html>FragmentWrapper</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i38" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(FragmentWrapper,Collection,String)>logIn</a>(<a href=../internal/FragmentWrapper.html>FragmentWrapper</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> loggerID) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i39" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(Activity,Collection)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested permissions.</td>
+                                        </tr>
+                                        
+                                        <tr id="i40" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(FragmentWrapper,LoginConfiguration)>logIn</a>(<a href=../internal/FragmentWrapper.html>FragmentWrapper</a> fragment, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=LoginConfiguration.html>LoginConfiguration</a> loginConfig) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested login configuration.</td>
+                                        </tr>
+                                        
+                                        <tr id="i41" class="rowColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(Activity,LoginConfiguration)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=LoginConfiguration.html>LoginConfiguration</a> loginConfig) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested configuration.</td>
+                                        </tr>
+                                        
+                                        <tr id="i42" class="altColor">
+                                            <td class="colFirst"><code>void</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=LoginManager.html#logIn(Activity,Collection,String)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> loggerID) </code>
+                                            </th>
+                                            <td class="colLast">Logs the user in with the requested permissions.</td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="blockList">
+                                
+                                    <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+                                        <!--   -->
+                                    </a>
+                                        <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+                                        <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString,
+                                            wait, wait, wait</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="details">
+            <ul class="blockList">
+                <li class="blockList">
+                    <!-- ========= CONSTRUCTOR DETAIL ======== -->
+                    
+                    <!-- ============ METHOD DETAIL ========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.detail">
+                                <!--   -->
+                            </a>
+                                <h3>Method Detail</h3>
+                                
+                                <a id="getInstance()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getInstance</h4>
+                                        <pre class="methodSignature"> static <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#getInstance()>getInstance</a>()</pre>
+                                        <div class="block"><p>Getter for the login manager.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getLoginBehavior()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getLoginBehavior</h4>
+                                        <pre class="methodSignature"> <a href=LoginBehavior.html>LoginBehavior</a> <a href=LoginManager.html#getLoginBehavior()>getLoginBehavior</a>()</pre>
+                                        <div class="block"><p>Getter for the login behavior.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setLoginBehavior(LoginBehavior)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setLoginBehavior</h4>
+                                        <pre class="methodSignature"> <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#setLoginBehavior(LoginBehavior)>setLoginBehavior</a>(<a href=LoginBehavior.html>LoginBehavior</a> loginBehavior)</pre>
+                                        <div class="block"><p>Setter for the login behavior.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>loginBehavior</code> - The login behavior.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getDefaultAudience()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getDefaultAudience</h4>
+                                        <pre class="methodSignature"> <a href=DefaultAudience.html>DefaultAudience</a> <a href=LoginManager.html#getDefaultAudience()>getDefaultAudience</a>()</pre>
+                                        <div class="block"><p>Getter for the default audience.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setDefaultAudience(DefaultAudience)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setDefaultAudience</h4>
+                                        <pre class="methodSignature"> <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#setDefaultAudience(DefaultAudience)>setDefaultAudience</a>(<a href=DefaultAudience.html>DefaultAudience</a> defaultAudience)</pre>
+                                        <div class="block"><p>Setter for the default audience.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>defaultAudience</code> - The default audience.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getAuthType()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getAuthType</h4>
+                                        <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=LoginManager.html#getAuthType()>getAuthType</a>()</pre>
+                                        <div class="block"><p>Getter for the authType</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setAuthType(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setAuthType</h4>
+                                        <pre class="methodSignature"> <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#setAuthType(String)>setAuthType</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> authType)</pre>
+                                        <div class="block"><p>Setter for the authType</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>authType</code> - The authType</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setMessengerPageId(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setMessengerPageId</h4>
+                                        <pre class="methodSignature"> <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#setMessengerPageId(String)>setMessengerPageId</a>(@<a href=https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html>Nullable</a>() <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> messengerPageId)</pre>
+                                        <div class="block"><p>Setter for the messengerPageId</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>messengerPageId</code> - The messengerPageId</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setResetMessengerState(boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setResetMessengerState</h4>
+                                        <pre class="methodSignature"> <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#setResetMessengerState(boolean)>setResetMessengerState</a>(boolean resetMessengerState)</pre>
+                                        <div class="block"><p>Setter for the resetMessengerState. For developers of the app only.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>resetMessengerState</code> - Whether to enable resetMessengerState</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isFamilyLogin()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isFamilyLogin</h4>
+                                        <pre class="methodSignature"> boolean <a href=LoginManager.html#isFamilyLogin()>isFamilyLogin</a>()</pre>
+                                        <div class="block"><p>Determines whether we are using the cross Family of Apps login experience</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getShouldSkipAccountDeduplication()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getShouldSkipAccountDeduplication</h4>
+                                        <pre class="methodSignature"> boolean <a href=LoginManager.html#getShouldSkipAccountDeduplication()>getShouldSkipAccountDeduplication</a>()</pre>
+                                        <div class="block"><p>Determines if we should skip deduplicating account during x-FoA login.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setShouldSkipAccountDeduplication(boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setShouldSkipAccountDeduplication</h4>
+                                        <pre class="methodSignature"> <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#setShouldSkipAccountDeduplication(boolean)>setShouldSkipAccountDeduplication</a>(boolean shouldSkipAccountDeduplication)</pre>
+                                        <div class="block"><p>Setter for whether we are skipping deduplicating account during x-FoA login.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>shouldSkipAccountDeduplication</code> - Whether we want to opt out account deduplicationexperience in Family of Apps login</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="resolveError(Activity,GraphResponse)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>resolveError</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#resolveError(Activity,GraphResponse)>resolveError</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=../GraphResponse.html>GraphResponse</a> response)</pre>
+                                        <div class="block"><p>Starts the login process to resolve the error defined in the response. The registered logincallbacks will be called on completion.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>activity</code> - The activity which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>response</code> - The response that has the error.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="resolveError(Fragment,GraphResponse)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>resolveError</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#resolveError(Fragment,GraphResponse)>resolveError</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=../GraphResponse.html>GraphResponse</a> response)</pre>
+                                        <div class="block"><p>Starts the login process to resolve the error defined in the response. The registered logincallbacks will be called on completion.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>response</code> - The response that has the error.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="resolveError(Fragment,GraphResponse)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>resolveError</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#resolveError(Fragment,GraphResponse)>resolveError</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=../GraphResponse.html>GraphResponse</a> response)</pre>
+                                        <div class="block"><p>Starts the login process to resolve the error defined in the response. The registered logincallbacks will be called on completion.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>response</code> - The response that has the error.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="registerCallback(CallbackManager,FacebookCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>registerCallback</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#registerCallback(CallbackManager,FacebookCallback)>registerCallback</a>(<a href=../CallbackManager.html>CallbackManager</a> callbackManager, <a href=../FacebookCallback.html>FacebookCallback</a>&lt;<a href=LoginResult.html>LoginResult</a>&gt; callback)</pre>
+                                        <div class="block"><p>Registers a login callback to the given callback manager.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callbackManager</code> - The callback manager that will encapsulate the callback.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - The login callback that will be called on login completion.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="unregisterCallback(CallbackManager)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>unregisterCallback</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#unregisterCallback(CallbackManager)>unregisterCallback</a>(<a href=../CallbackManager.html>CallbackManager</a> callbackManager)</pre>
+                                        <div class="block"><p>Unregisters a login callback to the given callback manager.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>callbackManager</code> - The callback manager that will encapsulate the callback.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getLoginTargetApp()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getLoginTargetApp</h4>
+                                        <pre class="methodSignature"> <a href=LoginTargetApp.html>LoginTargetApp</a> <a href=LoginManager.html#getLoginTargetApp()>getLoginTargetApp</a>()</pre>
+                                        <div class="block"><p>Getter for the login target app.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setLoginTargetApp(LoginTargetApp)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setLoginTargetApp</h4>
+                                        <pre class="methodSignature"> <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#setLoginTargetApp(LoginTargetApp)>setLoginTargetApp</a>(<a href=LoginTargetApp.html>LoginTargetApp</a> targetApp)</pre>
+                                        <div class="block"><p>Setter for the login target app.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>targetApp</code> - The login target app.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setFamilyLogin(boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setFamilyLogin</h4>
+                                        <pre class="methodSignature"> <a href=LoginManager.html>LoginManager</a> <a href=LoginManager.html#setFamilyLogin(boolean)>setFamilyLogin</a>(boolean isFamilyLogin)</pre>
+                                        <div class="block"><p>Setter for whether we are using cross Family of Apps login</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>isFamilyLogin</code> - Whether we are using cross Family of Apps login</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logOut()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logOut</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logOut()>logOut</a>()</pre>
+                                        <div class="block"><p>Logs out the user.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="retrieveLoginStatus(Context,LoginStatusCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>retrieveLoginStatus</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#retrieveLoginStatus(Context,LoginStatusCallback)>retrieveLoginStatus</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context, <a href=../LoginStatusCallback.html>LoginStatusCallback</a> responseCallback)</pre>
+                                        <div class="block"><p>Retrieves the login status for the user. This will return an access token for the app if a useris logged into the Facebook for Android app on the same device and that user had previouslylogged into the app. If an access token was retrieved then a toast will be shown telling theuser that they have been logged in.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>context</code> - An Android context</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>responseCallback</code> - The callback to be called when the request completes</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="retrieveLoginStatus(Context,long,LoginStatusCallback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>retrieveLoginStatus</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#retrieveLoginStatus(Context,long,LoginStatusCallback)>retrieveLoginStatus</a>(<a href=https://developer.android.com/reference/kotlin/android/content/Context.html>Context</a> context, long toastDurationMs, <a href=../LoginStatusCallback.html>LoginStatusCallback</a> responseCallback)</pre>
+                                        <div class="block"><p>Retrieves the login status for the user. This will return an access token for the app if a useris logged into the Facebook for Android app on the same device and that user had previouslylogged into the app. If an access token was retrieved then a toast will be shown telling theuser that they have been logged in.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>context</code> - An Android context</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>toastDurationMs</code> - The duration to show the success toast in milliseconds</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>responseCallback</code> - The callback to be called when the request completes</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logInWithReadPermissions(Fragment,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logInWithReadPermissions</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logInWithReadPermissions(Fragment,Collection)>logInWithReadPermissions</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested read permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.support.v4.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logInWithReadPermissions(Fragment,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logInWithReadPermissions</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logInWithReadPermissions(Fragment,Collection)>logInWithReadPermissions</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested read permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logInWithReadPermissions(Activity,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logInWithReadPermissions</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logInWithReadPermissions(Activity,Collection)>logInWithReadPermissions</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested read permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>activity</code> - The activity which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logInWithConfiguration(Fragment,LoginConfiguration)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logInWithConfiguration</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logInWithConfiguration(Fragment,LoginConfiguration)>logInWithConfiguration</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=LoginConfiguration.html>LoginConfiguration</a> loginConfig)</pre>
+                                        <div class="block"><p>Logs the user in with the requested configuration.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.support.v4.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>loginConfig</code> - The login configuration</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="loginWithConfiguration(Activity,LoginConfiguration)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>loginWithConfiguration</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#loginWithConfiguration(Activity,LoginConfiguration)>loginWithConfiguration</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=LoginConfiguration.html>LoginConfiguration</a> loginConfig)</pre>
+                                        <div class="block"><p>Logs the user in with the requested configuration.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>activity</code> - The activity which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>loginConfig</code> - The login configuration</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="reauthorizeDataAccess(Activity)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>reauthorizeDataAccess</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#reauthorizeDataAccess(Activity)>reauthorizeDataAccess</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity)</pre>
+                                        <div class="block"><p>Reauthorize data access</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>activity</code> - The activity which is starting the reauthorization process.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="reauthorizeDataAccess(Fragment)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>reauthorizeDataAccess</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#reauthorizeDataAccess(Fragment)>reauthorizeDataAccess</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment)</pre>
+                                        <div class="block"><p>Reauthorize data access</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.support.v4.app.Fragment starting the reauthorization process.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logInWithPublishPermissions(Fragment,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logInWithPublishPermissions</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logInWithPublishPermissions(Fragment,Collection)>logInWithPublishPermissions</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested publish permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.support.v4.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logInWithPublishPermissions(Fragment,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logInWithPublishPermissions</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logInWithPublishPermissions(Fragment,Collection)>logInWithPublishPermissions</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested publish permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logInWithPublishPermissions(Activity,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logInWithPublishPermissions</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logInWithPublishPermissions(Activity,Collection)>logInWithPublishPermissions</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested publish permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>activity</code> - The activity which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(Fragment,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(Fragment,Collection)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.support.v4.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(Fragment,Collection,String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(Fragment,Collection,String)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> loggerID)</pre>
+                                        <div class="block"><p>Logs the user in with the requested permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.support.v4.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>loggerID</code> - Override the default logger ID for the request</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(Fragment,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(Fragment,Collection)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(Fragment,Collection,String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(Fragment,Collection,String)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Fragment.html>Fragment</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> loggerID)</pre>
+                                        <div class="block"><p>Logs the user in with the requested permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The android.app.Fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>loggerID</code> - Override the default logger ID for the request</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(FragmentWrapper,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(FragmentWrapper,Collection)>logIn</a>(<a href=../internal/FragmentWrapper.html>FragmentWrapper</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(FragmentWrapper,Collection,String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(FragmentWrapper,Collection,String)>logIn</a>(<a href=../internal/FragmentWrapper.html>FragmentWrapper</a> fragment, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> loggerID)</pre>
+                                        <div class="block"><p>Logs the user in with the requested permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>loggerID</code> - Override the default logger ID for the request</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(Activity,Collection)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(Activity,Collection)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions)</pre>
+                                        <div class="block"><p>Logs the user in with the requested permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>activity</code> - The activity which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(FragmentWrapper,LoginConfiguration)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(FragmentWrapper,LoginConfiguration)>logIn</a>(<a href=../internal/FragmentWrapper.html>FragmentWrapper</a> fragment, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=LoginConfiguration.html>LoginConfiguration</a> loginConfig)</pre>
+                                        <div class="block"><p>Logs the user in with the requested login configuration.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>fragment</code> - The fragment which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>loginConfig</code> - The login config of the request</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(Activity,LoginConfiguration)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(Activity,LoginConfiguration)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, @<a href=https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html>NonNull</a>() <a href=LoginConfiguration.html>LoginConfiguration</a> loginConfig)</pre>
+                                        <div class="block"><p>Logs the user in with the requested configuration.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>activity</code> - The activity which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>loginConfig</code> - The login config of the request</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logIn(Activity,Collection,String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logIn</h4>
+                                        <pre class="methodSignature"> void <a href=LoginManager.html#logIn(Activity,Collection,String)>logIn</a>(<a href=https://developer.android.com/reference/kotlin/android/app/Activity.html>Activity</a> activity, <a href=https://developer.android.com/reference/kotlin/java/util/Collection.html>Collection</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a>&gt; permissions, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> loggerID)</pre>
+                                        <div class="block"><p>Logs the user in with the requested permissions.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>activity</code> - The activity which is starting the login process.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>permissions</code> - The requested permissions.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>loggerID</code> - Override the default logger ID for the request</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer role="contentinfo">
+    <nav role="navigation">
+        <!-- ======= START OF BOTTOM NAVBAR ====== -->
+        <div class="bottomNav"><a id="navbar.bottom">
+            <!--   -->
+        </a>
+            <div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a>
+            </div>
+            <a id="navbar.bottom.firstrow">
+                <!--   -->
+            </a>
+            <ul class="navList" title="Navigation">
+    <li><a href="../../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+        <a id="skip.navbar.bottom">
+            <!--   -->
+        </a>
+        <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ======== END OF BOTTOM NAVBAR ======= -->
+    </nav>
+</footer><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0"
+    style="display: none;"></ul>
+<span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span>
+</body>
+</html>

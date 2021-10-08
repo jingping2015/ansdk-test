@@ -1,0 +1,1051 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en"><head>
+    <title>Task 11.3.0 API </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="dc.created" content="2020-03-25">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../dokka-javadoc-stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../jquery/jquery-ui.css" title="Style">
+    <script type="text/javascript" src="../../../jquery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../../jquery/jquery-migrate-3.0.1.js"></script>
+    <script type="text/javascript" src="../../../jquery/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../../../search.js"></script>
+    <script async type="text/javascript" src="../../../module-search-index.js"></script>
+    <script async type="text/javascript" src="../../../package-search-index.js"></script>
+    <script async type="text/javascript" src="../../../type-search-index.js"></script>
+    <script async type="text/javascript" src="../../../member-search-index.js"></script>
+    <script async type="text/javascript" src="../../../tag-search-index.js"></script>
+</head><body>
+<script type="text/javascript">
+var pathtoroot = "../../../";
+</script>
+<noscript>
+    <div>JavaScript is disabled on your browser.</div>
+</noscript><header role="banner">
+    <nav role="navigation">
+        <div class="fixedNav">
+            <!-- ========= START OF TOP NAVBAR ======= -->
+            <div class="topNav"><a id="navbar.top">
+                <!--   -->
+            </a>
+                <div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a>
+                </div>
+                <a id="navbar.top.firstrow">
+                    <!--   -->
+                </a>
+                <ul class="navList" title="Navigation">
+    <li><a href="../../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+            <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" class="ui-autocomplete-input" autocomplete="off" placeholder="Search">
+<input type="reset" id="reset" value="reset">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ========= END OF TOP NAVBAR ========= -->
+        </div>
+        <div class="navPadding">&nbsp;</div>
+        <script type="text/javascript"><!--
+        $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+        //-->
+        </script>
+    </nav>
+</header>
+
+<main role="main">
+    <div class="header">
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <h2 title="Class Task" class="title">Class Task</h2>
+    </div>
+    <div class="contentContainer">
+        <!-- <ul class="inheritance">
+            <li>java.lang.Object</li>
+            <li>
+                <ul class="inheritance">
+                    <li>adaptation.Adaptation</li>
+                </ul>
+            </li>
+        </ul> TODO inheritance tree -->
+        <div class="description">
+            <ul class="blockList">
+                <li class="blockList">
+                    
+                    <hr>
+                    <pre class="wrap-overflow">
+
+public final class <span class="typeNameLabel"><a href=Task.html>Task</a>&lt;TResult extends <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a>&gt;</span>
+
+                    </pre>
+                    <div class="block"><p>Represents the result of an asynchronous operation.</p></div>
+                </li>
+            </ul>
+        </div>
+        <div class="summary">
+            <ul class="blockList">
+                <li class="blockList">
+                <!-- ======== NESTED CLASS SUMMARY ======== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="nested.class.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Nested Class Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Class</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="Task.UnobservedExceptionHandler.html">Task.UnobservedExceptionHandler</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Interface for handlers invoked when a failed <code>Task</code> is about to be finalized, but the exception has not been consumed.</p><p>The handler will execute in the GC thread, so if the handler needs to do anything time consuming or complex it is a good idea to fire off a <code>Task</code> to handle the exception.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public final class</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="Task.TaskCompletionSource.html">Task.TaskCompletionSource</a></span></code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public class</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="Task.Companion.html">Task.Companion</a></span></code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- =========== FIELD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="field.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Field Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Field</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#isCompleted>isCompleted</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#isCancelled>isCancelled</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#isFaulted>isFaulted</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private final <a href=Task.html>TResult</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#result>result</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/Exception.html>Exception</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#error>error</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+                    
+                    <!-- =========== ENUM CONSTANT SUMMARY =========== -->
+                    
+                    <!-- ========== METHOD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Method Summary</h3>
+                                <div class="memberSummary">
+                                    <div role="tablist" aria-orientation="horizontal">
+                                        <button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button>
+                                        <!-- TODO: Instance and Concrete Methods #1118 -->
+                                    </div>
+                                    <div id="memberSummary_tabpanel" role="tabpanel">
+                                    <table aria-labelledby="t0">
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Method</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#getIsCompleted()>getIsCompleted</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i1" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#getIsCancelled()>getIsCancelled</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#getIsFaulted()>getIsFaulted</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=Task.html>TResult</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#getResult()>getResult</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i4" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Exception.html>Exception</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#getError()>getError</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#waitForCompletion()>waitForCompletion</a>() </code>
+                                            </th>
+                                            <td class="colLast">Blocks until the task is complete.</td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#waitForCompletion(Long,TimeUnit)>waitForCompletion</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> duration, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> timeUnit) </code>
+                                            </th>
+                                            <td class="colLast">Blocks until the task is complete or times out.</td>
+                                        </tr>
+                                        
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TOut extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#cast()>TOut</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#cast()>cast</a>() </code>
+                                            </th>
+                                            <td class="colLast">Makes a fluent cast of a Task's result possible, avoiding an extra continuation just to cast the type of the result.</td>
+                                        </tr>
+                                        
+                                        <tr id="i8" class="altColor">
+                                            <td class="colFirst"><code>final <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#makeVoid()>makeVoid</a>() </code>
+                                            </th>
+                                            <td class="colLast">Turns a Task&lt;T&gt; into a Task&lt;Void&gt;, dropping any result.</td>
+                                        </tr>
+                                        
+                                        <tr id="i9" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWhile(Callable,Continuation)>continueWhile</a>(<a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html>Callable</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a>&gt; predicate, <a href=Continuation.html>Continuation</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>, <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;&gt; continuation) </code>
+                                            </th>
+                                            <td class="colLast">Continues a task with the equivalent of a Task-based while loop, where the body of the loop is a task continuation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>final <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWhile(Callable,Continuation,CancellationToken)>continueWhile</a>(<a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html>Callable</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a>&gt; predicate, <a href=Continuation.html>Continuation</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>, <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Continues a task with the equivalent of a Task-based while loop, where the body of the loop is a task continuation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWhile(Callable,Continuation,Executor,CancellationToken)>continueWhile</a>(<a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html>Callable</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a>&gt; predicate, <a href=Continuation.html>Continuation</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>, <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Continues a task with the equivalent of a Task-based while loop, where the body of the loop is a task continuation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWith(Continuation,Executor)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWith(Continuation,Executor)>continueWith</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#continueWith(Continuation,Executor)>TContinuationResult</a>&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor) </code>
+                                            </th>
+                                            <td class="colLast">Adds a continuation that will be scheduled using the executor, returning a new task that completes after the continuation has finished running.</td>
+                                        </tr>
+                                        
+                                        <tr id="i13" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWith(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWith(Continuation,Executor,CancellationToken)>continueWith</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#continueWith(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Adds a continuation that will be scheduled using the executor, returning a new task that completes after the continuation has finished running.</td>
+                                        </tr>
+                                        
+                                        <tr id="i14" class="altColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWith(Continuation)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWith(Continuation)>continueWith</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#continueWith(Continuation)>TContinuationResult</a>&gt; continuation) </code>
+                                            </th>
+                                            <td class="colLast">Adds a synchronous continuation to this task, returning a new task that completes after the continuation has finished running.</td>
+                                        </tr>
+                                        
+                                        <tr id="i15" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWith(Continuation,CancellationToken)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWith(Continuation,CancellationToken)>continueWith</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#continueWith(Continuation,CancellationToken)>TContinuationResult</a>&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Adds a synchronous continuation to this task, returning a new task that completes after the continuation has finished running.</td>
+                                        </tr>
+                                        
+                                        <tr id="i16" class="altColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,Executor)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWithTask(Continuation,Executor)>continueWithTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,Executor)>TContinuationResult</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor) </code>
+                                            </th>
+                                            <td class="colLast">Adds an Task-based continuation to this task that will be scheduled using the executor, returning a new task that completes after the task returned by the continuation has completed.</td>
+                                        </tr>
+                                        
+                                        <tr id="i17" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWithTask(Continuation,Executor,CancellationToken)>continueWithTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Adds an Task-based continuation to this task that will be scheduled using the executor, returning a new task that completes after the task returned by the continuation has completed.</td>
+                                        </tr>
+                                        
+                                        <tr id="i18" class="altColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWithTask(Continuation)>continueWithTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation)>TContinuationResult</a>&gt;&gt; continuation) </code>
+                                            </th>
+                                            <td class="colLast">Adds an asynchronous continuation to this task, returning a new task that completes after the task returned by the continuation has completed.</td>
+                                        </tr>
+                                        
+                                        <tr id="i19" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,CancellationToken)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#continueWithTask(Continuation,CancellationToken)>continueWithTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,CancellationToken)>TContinuationResult</a>&gt;&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Adds an asynchronous continuation to this task, returning a new task that completes after the task returned by the continuation has completed.</td>
+                                        </tr>
+                                        
+                                        <tr id="i20" class="altColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccess(Continuation,Executor)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#onSuccess(Continuation,Executor)>onSuccess</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#onSuccess(Continuation,Executor)>TContinuationResult</a>&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor) </code>
+                                            </th>
+                                            <td class="colLast">Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a> or cancellation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i21" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccess(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#onSuccess(Continuation,Executor,CancellationToken)>onSuccess</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#onSuccess(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a> or cancellation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i22" class="altColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccess(Continuation)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#onSuccess(Continuation)>onSuccess</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#onSuccess(Continuation)>TContinuationResult</a>&gt; continuation) </code>
+                                            </th>
+                                            <td class="colLast">Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a>s or cancellation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i23" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccess(Continuation,CancellationToken)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#onSuccess(Continuation,CancellationToken)>onSuccess</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#onSuccess(Continuation,CancellationToken)>TContinuationResult</a>&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a>s or cancellation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i24" class="altColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,Executor)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#onSuccessTask(Continuation,Executor)>onSuccessTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,Executor)>TContinuationResult</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor) </code>
+                                            </th>
+                                            <td class="colLast">Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a>s or cancellation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i25" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#onSuccessTask(Continuation,Executor,CancellationToken)>onSuccessTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a>s or cancellation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i26" class="altColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#onSuccessTask(Continuation)>onSuccessTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation)>TContinuationResult</a>&gt;&gt; continuation) </code>
+                                            </th>
+                                            <td class="colLast">Runs a continuation when a task completes successfully, forwarding along [ ]s or cancellation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i27" class="rowColor">
+                                            <td class="colFirst"><code>final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,CancellationToken)>TContinuationResult</a>&gt;</code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#onSuccessTask(Continuation,CancellationToken)>onSuccessTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,CancellationToken)>TContinuationResult</a>&gt;&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct) </code>
+                                            </th>
+                                            <td class="colLast">Runs a continuation when a task completes successfully, forwarding along [ ]s or cancellation.</td>
+                                        </tr>
+                                        
+                                        <tr id="i28" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#trySetCancelled()>trySetCancelled</a>() </code>
+                                            </th>
+                                            <td class="colLast">Sets the cancelled flag on the Task if the Task hasn't already been completed.</td>
+                                        </tr>
+                                        
+                                        <tr id="i29" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#trySetResult(TResult)>trySetResult</a>(<a href=Task.html>TResult</a> result) </code>
+                                            </th>
+                                            <td class="colLast">Sets the result on the Task if the Task hasn't already been completed.</td>
+                                        </tr>
+                                        
+                                        <tr id="i30" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=Task.html#trySetError(TypeAliased(typeAlias=Nullable(inner=GenericTypeConstructor(dri=kotlin/Exception///PointingToDeclaration/, projections=[], presentableName=null, extra=PropertyContainer(map={}))), inner=Nullable(inner=GenericTypeConstructor(dri=java.lang/Exception///PointingToDeclaration/, projections=[], presentableName=null, extra=PropertyContainer(map={})))))>trySetError</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Exception.html>Exception</a> error) </code>
+                                            </th>
+                                            <td class="colLast">Sets the error on the Task if the Task hasn't already been completed.</td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="blockList">
+                                
+                                    <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+                                        <!--   -->
+                                    </a>
+                                        <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+                                        <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString,
+                                            wait, wait, wait</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="details">
+            <ul class="blockList">
+                <li class="blockList">
+                    <!-- ========= CONSTRUCTOR DETAIL ======== -->
+                    
+                    <!-- ============ METHOD DETAIL ========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.detail">
+                                <!--   -->
+                            </a>
+                                <h3>Method Detail</h3>
+                                
+                                <a id="getIsCompleted()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getIsCompleted</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=Task.html#getIsCompleted()>getIsCompleted</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getIsCancelled()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getIsCancelled</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=Task.html#getIsCancelled()>getIsCancelled</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getIsFaulted()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getIsFaulted</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=Task.html#getIsFaulted()>getIsFaulted</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getResult()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getResult</h4>
+                                        <pre class="methodSignature"> final <a href=Task.html>TResult</a> <a href=Task.html#getResult()>getResult</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getError()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getError</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Exception.html>Exception</a> <a href=Task.html#getError()>getError</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="waitForCompletion()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>waitForCompletion</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=Task.html#waitForCompletion()>waitForCompletion</a>()</pre>
+                                        <div class="block"><p>Blocks until the task is complete.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="waitForCompletion(Long,TimeUnit)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>waitForCompletion</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=Task.html#waitForCompletion(Long,TimeUnit)>waitForCompletion</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Long.html>Long</a> duration, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html>TimeUnit</a> timeUnit)</pre>
+                                        <div class="block"><p>Blocks until the task is complete or times out.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="cast()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>cast</h4>
+                                        <pre class="methodSignature"> final &lt;TOut extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#cast()>TOut</a>&gt; <a href=Task.html#cast()>cast</a>()</pre>
+                                        <div class="block"><p>Makes a fluent cast of a Task's result possible, avoiding an extra continuation just to cast the type of the result.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="makeVoid()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>makeVoid</h4>
+                                        <pre class="methodSignature"> final <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt; <a href=Task.html#makeVoid()>makeVoid</a>()</pre>
+                                        <div class="block"><p>Turns a Task&lt;T&gt; into a Task&lt;Void&gt;, dropping any result. &lt;/Void&gt;&lt;/T&gt;</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWhile(Callable,Continuation)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWhile</h4>
+                                        <pre class="methodSignature"> final <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt; <a href=Task.html#continueWhile(Callable,Continuation)>continueWhile</a>(<a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html>Callable</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a>&gt; predicate, <a href=Continuation.html>Continuation</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>, <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;&gt; continuation)</pre>
+                                        <div class="block"><p>Continues a task with the equivalent of a Task-based while loop, where the body of the loop is a task continuation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWhile(Callable,Continuation,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWhile</h4>
+                                        <pre class="methodSignature"> final <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt; <a href=Task.html#continueWhile(Callable,Continuation,CancellationToken)>continueWhile</a>(<a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html>Callable</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a>&gt; predicate, <a href=Continuation.html>Continuation</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>, <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Continues a task with the equivalent of a Task-based while loop, where the body of the loop is a task continuation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWhile(Callable,Continuation,Executor,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWhile</h4>
+                                        <pre class="methodSignature"> final <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt; <a href=Task.html#continueWhile(Callable,Continuation,Executor,CancellationToken)>continueWhile</a>(<a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Callable.html>Callable</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a>&gt; predicate, <a href=Continuation.html>Continuation</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>, <a href=Task.html>Task</a>&lt;<a href=https://developer.android.com/reference/kotlin/java/lang/Void.html>Void</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Continues a task with the equivalent of a Task-based while loop, where the body of the loop is a task continuation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWith(Continuation,Executor)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWith</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWith(Continuation,Executor)>TContinuationResult</a>&gt; <a href=Task.html#continueWith(Continuation,Executor)>continueWith</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#continueWith(Continuation,Executor)>TContinuationResult</a>&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor)</pre>
+                                        <div class="block"><p>Adds a continuation that will be scheduled using the executor, returning a new task that completes after the continuation has finished running. This allows the continuation to be scheduled on different thread.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWith(Continuation,Executor,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWith</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWith(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt; <a href=Task.html#continueWith(Continuation,Executor,CancellationToken)>continueWith</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#continueWith(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Adds a continuation that will be scheduled using the executor, returning a new task that completes after the continuation has finished running. This allows the continuation to be scheduled on different thread.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWith(Continuation)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWith</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWith(Continuation)>TContinuationResult</a>&gt; <a href=Task.html#continueWith(Continuation)>continueWith</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#continueWith(Continuation)>TContinuationResult</a>&gt; continuation)</pre>
+                                        <div class="block"><p>Adds a synchronous continuation to this task, returning a new task that completes after the continuation has finished running.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWith(Continuation,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWith</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWith(Continuation,CancellationToken)>TContinuationResult</a>&gt; <a href=Task.html#continueWith(Continuation,CancellationToken)>continueWith</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#continueWith(Continuation,CancellationToken)>TContinuationResult</a>&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Adds a synchronous continuation to this task, returning a new task that completes after the continuation has finished running.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWithTask(Continuation,Executor)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWithTask</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,Executor)>TContinuationResult</a>&gt; <a href=Task.html#continueWithTask(Continuation,Executor)>continueWithTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,Executor)>TContinuationResult</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor)</pre>
+                                        <div class="block"><p>Adds an Task-based continuation to this task that will be scheduled using the executor, returning a new task that completes after the task returned by the continuation has completed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWithTask(Continuation,Executor,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWithTask</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt; <a href=Task.html#continueWithTask(Continuation,Executor,CancellationToken)>continueWithTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Adds an Task-based continuation to this task that will be scheduled using the executor, returning a new task that completes after the task returned by the continuation has completed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWithTask(Continuation)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWithTask</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation)>TContinuationResult</a>&gt; <a href=Task.html#continueWithTask(Continuation)>continueWithTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation)>TContinuationResult</a>&gt;&gt; continuation)</pre>
+                                        <div class="block"><p>Adds an asynchronous continuation to this task, returning a new task that completes after the task returned by the continuation has completed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="continueWithTask(Continuation,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>continueWithTask</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,CancellationToken)>TContinuationResult</a>&gt; <a href=Task.html#continueWithTask(Continuation,CancellationToken)>continueWithTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#continueWithTask(Continuation,CancellationToken)>TContinuationResult</a>&gt;&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Adds an asynchronous continuation to this task, returning a new task that completes after the task returned by the continuation has completed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onSuccess(Continuation,Executor)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onSuccess</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccess(Continuation,Executor)>TContinuationResult</a>&gt; <a href=Task.html#onSuccess(Continuation,Executor)>onSuccess</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#onSuccess(Continuation,Executor)>TContinuationResult</a>&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor)</pre>
+                                        <div class="block"><p>Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a> or cancellation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onSuccess(Continuation,Executor,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onSuccess</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccess(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt; <a href=Task.html#onSuccess(Continuation,Executor,CancellationToken)>onSuccess</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#onSuccess(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a> or cancellation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onSuccess(Continuation)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onSuccess</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccess(Continuation)>TContinuationResult</a>&gt; <a href=Task.html#onSuccess(Continuation)>onSuccess</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#onSuccess(Continuation)>TContinuationResult</a>&gt; continuation)</pre>
+                                        <div class="block"><p>Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a>s or cancellation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onSuccess(Continuation,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onSuccess</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccess(Continuation,CancellationToken)>TContinuationResult</a>&gt; <a href=Task.html#onSuccess(Continuation,CancellationToken)>onSuccess</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html#onSuccess(Continuation,CancellationToken)>TContinuationResult</a>&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a>s or cancellation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onSuccessTask(Continuation,Executor)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onSuccessTask</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,Executor)>TContinuationResult</a>&gt; <a href=Task.html#onSuccessTask(Continuation,Executor)>onSuccessTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,Executor)>TContinuationResult</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor)</pre>
+                                        <div class="block"><p>Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a>s or cancellation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onSuccessTask(Continuation,Executor,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onSuccessTask</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt; <a href=Task.html#onSuccessTask(Continuation,Executor,CancellationToken)>onSuccessTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,Executor,CancellationToken)>TContinuationResult</a>&gt;&gt; continuation, <a href=https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html>Executor</a> executor, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Runs a continuation when a task completes successfully, forwarding along <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html>Exception</a>s or cancellation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onSuccessTask(Continuation)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onSuccessTask</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation)>TContinuationResult</a>&gt; <a href=Task.html#onSuccessTask(Continuation)>onSuccessTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation)>TContinuationResult</a>&gt;&gt; continuation)</pre>
+                                        <div class="block"><p>Runs a continuation when a task completes successfully, forwarding along [ ]s or cancellation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="onSuccessTask(Continuation,CancellationToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>onSuccessTask</h4>
+                                        <pre class="methodSignature"> final &lt;TContinuationResult extends <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html>Any</a>&gt; <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,CancellationToken)>TContinuationResult</a>&gt; <a href=Task.html#onSuccessTask(Continuation,CancellationToken)>onSuccessTask</a>(<a href=Continuation.html>Continuation</a>&lt;<a href=Task.html>TResult</a>, <a href=Task.html>Task</a>&lt;<a href=Task.html#onSuccessTask(Continuation,CancellationToken)>TContinuationResult</a>&gt;&gt; continuation, <a href=CancellationToken.html>CancellationToken</a> ct)</pre>
+                                        <div class="block"><p>Runs a continuation when a task completes successfully, forwarding along [ ]s or cancellation.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="trySetCancelled()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>trySetCancelled</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=Task.html#trySetCancelled()>trySetCancelled</a>()</pre>
+                                        <div class="block"><p>Sets the cancelled flag on the Task if the Task hasn't already been completed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="trySetResult(TResult)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>trySetResult</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=Task.html#trySetResult(TResult)>trySetResult</a>(<a href=Task.html>TResult</a> result)</pre>
+                                        <div class="block"><p>Sets the result on the Task if the Task hasn't already been completed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="trySetError(TypeAliased(typeAlias=Nullable(inner=GenericTypeConstructor(dri=kotlin/Exception///PointingToDeclaration/, projections=[], presentableName=null, extra=PropertyContainer(map={}))), inner=Nullable(inner=GenericTypeConstructor(dri=java.lang/Exception///PointingToDeclaration/, projections=[], presentableName=null, extra=PropertyContainer(map={})))))">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>trySetError</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=Task.html#trySetError(TypeAliased(typeAlias=Nullable(inner=GenericTypeConstructor(dri=kotlin/Exception///PointingToDeclaration/, projections=[], presentableName=null, extra=PropertyContainer(map={}))), inner=Nullable(inner=GenericTypeConstructor(dri=java.lang/Exception///PointingToDeclaration/, projections=[], presentableName=null, extra=PropertyContainer(map={})))))>trySetError</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Exception.html>Exception</a> error)</pre>
+                                        <div class="block"><p>Sets the error on the Task if the Task hasn't already been completed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer role="contentinfo">
+    <nav role="navigation">
+        <!-- ======= START OF BOTTOM NAVBAR ====== -->
+        <div class="bottomNav"><a id="navbar.bottom">
+            <!--   -->
+        </a>
+            <div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a>
+            </div>
+            <a id="navbar.bottom.firstrow">
+                <!--   -->
+            </a>
+            <ul class="navList" title="Navigation">
+    <li><a href="../../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+        <a id="skip.navbar.bottom">
+            <!--   -->
+        </a>
+        <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ======== END OF BOTTOM NAVBAR ======= -->
+    </nav>
+</footer><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0"
+    style="display: none;"></ul>
+<span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span>
+</body>
+</html>

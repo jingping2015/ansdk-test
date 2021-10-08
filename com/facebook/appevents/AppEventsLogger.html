@@ -1,0 +1,812 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en"><head>
+    <title>AppEventsLogger 11.3.0 API </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="dc.created" content="2020-03-25">
+    <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../dokka-javadoc-stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../jquery/jquery-ui.css" title="Style">
+    <script type="text/javascript" src="../../../jquery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../../jquery/jquery-migrate-3.0.1.js"></script>
+    <script type="text/javascript" src="../../../jquery/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../../../search.js"></script>
+    <script async type="text/javascript" src="../../../module-search-index.js"></script>
+    <script async type="text/javascript" src="../../../package-search-index.js"></script>
+    <script async type="text/javascript" src="../../../type-search-index.js"></script>
+    <script async type="text/javascript" src="../../../member-search-index.js"></script>
+    <script async type="text/javascript" src="../../../tag-search-index.js"></script>
+</head><body>
+<script type="text/javascript">
+var pathtoroot = "../../../";
+</script>
+<noscript>
+    <div>JavaScript is disabled on your browser.</div>
+</noscript><header role="banner">
+    <nav role="navigation">
+        <div class="fixedNav">
+            <!-- ========= START OF TOP NAVBAR ======= -->
+            <div class="topNav"><a id="navbar.top">
+                <!--   -->
+            </a>
+                <div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a>
+                </div>
+                <a id="navbar.top.firstrow">
+                    <!--   -->
+                </a>
+                <ul class="navList" title="Navigation">
+    <li><a href="../../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+            <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" class="ui-autocomplete-input" autocomplete="off" placeholder="Search">
+<input type="reset" id="reset" value="reset">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ========= END OF TOP NAVBAR ========= -->
+        </div>
+        <div class="navPadding">&nbsp;</div>
+        <script type="text/javascript"><!--
+        $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+        //-->
+        </script>
+    </nav>
+</header>
+
+<main role="main">
+    <div class="header">
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <h2 title="Class AppEventsLogger" class="title">Class AppEventsLogger</h2>
+    </div>
+    <div class="contentContainer">
+        <!-- <ul class="inheritance">
+            <li>java.lang.Object</li>
+            <li>
+                <ul class="inheritance">
+                    <li>adaptation.Adaptation</li>
+                </ul>
+            </li>
+        </ul> TODO inheritance tree -->
+        <div class="description">
+            <ul class="blockList">
+                <li class="blockList">
+                    
+                    <hr>
+                    <pre class="wrap-overflow">
+
+public final class <span class="typeNameLabel"><a href=AppEventsLogger.html>AppEventsLogger</a></span>
+
+                    </pre>
+                    <div class="block"><p>The AppEventsLogger class allows the developer to log various types of events back to Facebook. In order to log events, the app must create an instance of this class via a .newLogger method, and then call the various "log" methods off of that.</p><p>This client-side event logging is then available through Facebook App Insights and for use with Facebook Ads conversion tracking and optimization.</p><p>The AppEventsLogger class has a few related roles:</p><ul><li><p>Logging predefined and application-defined events to Facebook App Insights with a numeric value to sum across a large number of events, and an optional set of key/value parameters that define "segments" for this event (e.g., 'purchaserStatus' : 'frequent', or 'gamerLevel' : 'intermediate'). These events may also be used for ads conversion tracking, optimization, and other ads related targeting in the future.</p></li><li><p>Methods that control the way in which events are flushed out to the Facebook servers.</p></li></ul><p>Here are some important characteristics of the logging mechanism provided by AppEventsLogger:</p><ul><li><p>Events are not sent immediately when logged. They're cached and flushed out to the Facebook servers in a number of situations:</p></li><li><p>when an event count threshold is passed (currently 100 logged events).</p></li><li><p>when a time threshold is passed (currently 15 seconds).</p></li><li><p>when an app has gone to background and is then brought back to the foreground.</p></li><li><p>Events will be accumulated when the app is in a disconnected state, and sent when the connection is restored and one of the above 'flush' conditions are met.</p></li><li><p>The AppEventsLogger class is intended to be used from the thread it was created on. Multiple AppEventsLoggers may be created on other threads if desired.</p></li><li><p>The developer can call the setFlushBehavior method to force the flushing of events to only occur on an explicit call to the <code>flush</code> method.</p></li><li><p>The developer can turn on console debug output for event logging and flushing to the server by calling FacebookSdk.addLoggingBehavior(LoggingBehavior.APP_EVENTS);</p></li></ul><p>Some things to note when logging events:</p><ul><li><p>There is a limit on the number of unique event names an app can use, on the order of 1000.</p></li><li><p>There is a limit to the number of unique parameter names in the provided parameters that can be used per event, on the order of 25. This is not just for an individual call, but for all invocations for that eventName.</p></li><li><p>Event names and parameter names must be between 2 and 40 characters, and must consist of alphanumeric characters, _, -, or spaces.</p></li><li><p>The length of each parameter value can be no more than on the order of 100 characters.</p></li></ul></div>
+                </li>
+            </ul>
+        </div>
+        <div class="summary">
+            <ul class="blockList">
+                <li class="blockList">
+                <!-- ======== NESTED CLASS SUMMARY ======== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="nested.class.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Nested Class Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Class</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public enum</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="AppEventsLogger.FlushBehavior.html">AppEventsLogger.FlushBehavior</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Controls when an AppEventsLogger sends log events to the server</p></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public enum</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="AppEventsLogger.ProductAvailability.html">AppEventsLogger.ProductAvailability</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Product availability for Product Catalog product item update</p></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public enum</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="AppEventsLogger.ProductCondition.html">AppEventsLogger.ProductCondition</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Product condition for Product Catalog product item update</p></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public class</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="AppEventsLogger.Companion.html">AppEventsLogger.Companion</a></span></code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- =========== FIELD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="field.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Field Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Field</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#applicationId>applicationId</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+                    
+                    <!-- =========== ENUM CONSTANT SUMMARY =========== -->
+                    
+                    <!-- ========== METHOD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Method Summary</h3>
+                                <div class="memberSummary">
+                                    <div role="tablist" aria-orientation="horizontal">
+                                        <button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button>
+                                        <!-- TODO: Instance and Concrete Methods #1118 -->
+                                    </div>
+                                    <div id="memberSummary_tabpanel" role="tabpanel">
+                                    <table aria-labelledby="t0">
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Method</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#getApplicationId()>getApplicationId</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i1" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logEvent(String)>logEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName) </code>
+                                            </th>
+                                            <td class="colLast">Log an app event with the specified name.</td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logEvent(String,Double)>logEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName, <a href=https://developer.android.com/reference/kotlin/java/lang/Double.html>Double</a> valueToSum) </code>
+                                            </th>
+                                            <td class="colLast">Log an app event with the specified name and the supplied value.</td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logEvent(String,Bundle)>logEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters) </code>
+                                            </th>
+                                            <td class="colLast">Log an app event with the specified name and set of parameters.</td>
+                                        </tr>
+                                        
+                                        <tr id="i4" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logEvent(String,Double,Bundle)>logEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName, <a href=https://developer.android.com/reference/kotlin/java/lang/Double.html>Double</a> valueToSum, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters) </code>
+                                            </th>
+                                            <td class="colLast">Log an app event with the specified name, supplied value, and set of parameters.</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logPurchase(BigDecimal,Currency)>logPurchase</a>(<a href=https://developer.android.com/reference/kotlin/java/math/BigDecimal.html>BigDecimal</a> purchaseAmount, <a href=https://developer.android.com/reference/kotlin/java/util/Currency.html>Currency</a> currency) </code>
+                                            </th>
+                                            <td class="colLast">Logs a purchase event with Facebook, in the specified amount and with the specified currency.</td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logPurchase(BigDecimal,Currency,Bundle)>logPurchase</a>(<a href=https://developer.android.com/reference/kotlin/java/math/BigDecimal.html>BigDecimal</a> purchaseAmount, <a href=https://developer.android.com/reference/kotlin/java/util/Currency.html>Currency</a> currency, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters) </code>
+                                            </th>
+                                            <td class="colLast">Logs a purchase event with Facebook explicitly, in the specified amount and with the specified currency.</td>
+                                        </tr>
+                                        
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logPurchaseImplicitly(BigDecimal,Currency,Bundle)>logPurchaseImplicitly</a>(<a href=https://developer.android.com/reference/kotlin/java/math/BigDecimal.html>BigDecimal</a> purchaseAmount, <a href=https://developer.android.com/reference/kotlin/java/util/Currency.html>Currency</a> currency, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i8" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logPushNotificationOpen(Bundle)>logPushNotificationOpen</a>(<a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> payload) </code>
+                                            </th>
+                                            <td class="colLast">Logs an app event that tracks that the application was open via Push Notification.</td>
+                                        </tr>
+                                        
+                                        <tr id="i9" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logPushNotificationOpen(Bundle,String)>logPushNotificationOpen</a>(<a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> payload, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> action) </code>
+                                            </th>
+                                            <td class="colLast">Logs an app event that tracks that the application was open via Push Notification.</td>
+                                        </tr>
+                                        
+                                        <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logProductItem(String,AppEventsLogger.ProductAvailability,AppEventsLogger.ProductCondition,String,String,String,String,BigDecimal,Currency,String,String,String,Bundle)>logProductItem</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> itemID, <a href=AppEventsLogger.ProductAvailability.html>AppEventsLogger.ProductAvailability</a> availability, <a href=AppEventsLogger.ProductCondition.html>AppEventsLogger.ProductCondition</a> condition, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> imageLink, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> link, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> title, <a href=https://developer.android.com/reference/kotlin/java/math/BigDecimal.html>BigDecimal</a> priceAmount, <a href=https://developer.android.com/reference/kotlin/java/util/Currency.html>Currency</a> currency, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> gtin, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> mpn, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> brand, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters) </code>
+                                            </th>
+                                            <td class="colLast">Uploads product catalog product item as an app event.</td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#flush()>flush</a>() </code>
+                                            </th>
+                                            <td class="colLast">Explicitly flush any stored events to the server.</td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#isValidForAccessToken(AccessToken)>isValidForAccessToken</a>(<a href=../AccessToken.html>AccessToken</a> accessToken) </code>
+                                            </th>
+                                            <td class="colLast">Determines if the logger is valid for the given access token.</td>
+                                        </tr>
+                                        
+                                        <tr id="i13" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=AppEventsLogger.html#logSdkEvent(String,Double,Bundle)>logSdkEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName, <a href=https://developer.android.com/reference/kotlin/java/lang/Double.html>Double</a> valueToSum, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters) </code>
+                                            </th>
+                                            <td class="colLast">This method is only for internal and use by the Facebook SDK account kit for legacy reason.</td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="blockList">
+                                
+                                    <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+                                        <!--   -->
+                                    </a>
+                                        <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+                                        <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString,
+                                            wait, wait, wait</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="details">
+            <ul class="blockList">
+                <li class="blockList">
+                    <!-- ========= CONSTRUCTOR DETAIL ======== -->
+                    
+                    <!-- ============ METHOD DETAIL ========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.detail">
+                                <!--   -->
+                            </a>
+                                <h3>Method Detail</h3>
+                                
+                                <a id="getApplicationId()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getApplicationId</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=AppEventsLogger.html#getApplicationId()>getApplicationId</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logEvent(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logEvent</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logEvent(String)>logEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName)</pre>
+                                        <div class="block"><p>Log an app event with the specified name.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>eventName</code> - eventName used to denote the event.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logEvent(String,Double)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logEvent</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logEvent(String,Double)>logEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName, <a href=https://developer.android.com/reference/kotlin/java/lang/Double.html>Double</a> valueToSum)</pre>
+                                        <div class="block"><p>Log an app event with the specified name and the supplied value.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>eventName</code> - eventName used to denote the event.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>valueToSum</code> - a value to associate with the event which will be summed up in Insights for across all instances of the event, so that average values can be determined, etc.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logEvent(String,Bundle)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logEvent</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logEvent(String,Bundle)>logEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</pre>
+                                        <div class="block"><p>Log an app event with the specified name and set of parameters.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>eventName</code> - eventName used to denote the event.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parameters</code> - A Bundle of parameters to log with the event.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logEvent(String,Double,Bundle)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logEvent</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logEvent(String,Double,Bundle)>logEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName, <a href=https://developer.android.com/reference/kotlin/java/lang/Double.html>Double</a> valueToSum, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</pre>
+                                        <div class="block"><p>Log an app event with the specified name, supplied value, and set of parameters.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>eventName</code> - eventName used to denote the event.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>valueToSum</code> - a value to associate with the event which will be summed up in Insights for across all instances of the event, so that average values can be determined, etc.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parameters</code> - A Bundle of parameters to log with the event.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logPurchase(BigDecimal,Currency)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logPurchase</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logPurchase(BigDecimal,Currency)>logPurchase</a>(<a href=https://developer.android.com/reference/kotlin/java/math/BigDecimal.html>BigDecimal</a> purchaseAmount, <a href=https://developer.android.com/reference/kotlin/java/util/Currency.html>Currency</a> currency)</pre>
+                                        <div class="block"><p>Logs a purchase event with Facebook, in the specified amount and with the specified currency.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>purchaseAmount</code> - Amount of purchase, in the currency specified by the 'currency' parameter.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>currency</code> - Currency used to specify the amount.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logPurchase(BigDecimal,Currency,Bundle)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logPurchase</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logPurchase(BigDecimal,Currency,Bundle)>logPurchase</a>(<a href=https://developer.android.com/reference/kotlin/java/math/BigDecimal.html>BigDecimal</a> purchaseAmount, <a href=https://developer.android.com/reference/kotlin/java/util/Currency.html>Currency</a> currency, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</pre>
+                                        <div class="block"><p>Logs a purchase event with Facebook explicitly, in the specified amount and with the specified currency. Additional detail about the purchase can be passed in through the parameters bundle.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>purchaseAmount</code> - Amount of purchase, in the currency specified by the 'currency' parameter.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>currency</code> - Currency used to specify the amount.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parameters</code> - Arbitrary additional information for describing this event.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logPurchaseImplicitly(BigDecimal,Currency,Bundle)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logPurchaseImplicitly</h4>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = Use {@link AppEventsLogger#logPurchase( java.math.BigDecimal, java.util.Currency,
+   *     android.os.Bundle)} instead.) final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logPurchaseImplicitly(BigDecimal,Currency,Bundle)>logPurchaseImplicitly</a>(<a href=https://developer.android.com/reference/kotlin/java/math/BigDecimal.html>BigDecimal</a> purchaseAmount, <a href=https://developer.android.com/reference/kotlin/java/util/Currency.html>Currency</a> currency, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logPushNotificationOpen(Bundle)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logPushNotificationOpen</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logPushNotificationOpen(Bundle)>logPushNotificationOpen</a>(<a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> payload)</pre>
+                                        <div class="block"><p>Logs an app event that tracks that the application was open via Push Notification.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>payload</code> - Notification payload received.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logPushNotificationOpen(Bundle,String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logPushNotificationOpen</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logPushNotificationOpen(Bundle,String)>logPushNotificationOpen</a>(<a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> payload, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> action)</pre>
+                                        <div class="block"><p>Logs an app event that tracks that the application was open via Push Notification.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>payload</code> - Notification payload received.</dd>
+                                            
+                                            
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logProductItem(String,AppEventsLogger.ProductAvailability,AppEventsLogger.ProductCondition,String,String,String,String,BigDecimal,Currency,String,String,String,Bundle)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logProductItem</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logProductItem(String,AppEventsLogger.ProductAvailability,AppEventsLogger.ProductCondition,String,String,String,String,BigDecimal,Currency,String,String,String,Bundle)>logProductItem</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> itemID, <a href=AppEventsLogger.ProductAvailability.html>AppEventsLogger.ProductAvailability</a> availability, <a href=AppEventsLogger.ProductCondition.html>AppEventsLogger.ProductCondition</a> condition, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> description, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> imageLink, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> link, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> title, <a href=https://developer.android.com/reference/kotlin/java/math/BigDecimal.html>BigDecimal</a> priceAmount, <a href=https://developer.android.com/reference/kotlin/java/util/Currency.html>Currency</a> currency, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> gtin, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> mpn, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> brand, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</pre>
+                                        <div class="block"><p>Uploads product catalog product item as an app event.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>itemID</code> - Unique ID for the item.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>availability</code> - If item is in stock.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>condition</code> - Product condition: new, refurbished or used.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>description</code> - Short text describing product.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>imageLink</code> - Link to item image used in ad.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>link</code> - Link to merchant's site where someone can buy the item.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>title</code> - Title of item.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>priceAmount</code> - Amount of purchase, in the currency specified by the 'currency' parameter.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>currency</code> - Currency used to specify the amount.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>gtin</code> - Global Trade Item Number including UPC, EAN, JAN and ISBN</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>mpn</code> - Unique manufacture ID for product</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>brand</code> - Name of the brand Note: Either gtin, mpn or brand is required.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parameters</code> - Optional fields for deep link specification.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="flush()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>flush</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#flush()>flush</a>()</pre>
+                                        <div class="block"><p>Explicitly flush any stored events to the server. Implicit flushes may happen depending on the value of getFlushBehavior. This method allows for explicit, app invoked flushing.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="isValidForAccessToken(AccessToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>isValidForAccessToken</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=AppEventsLogger.html#isValidForAccessToken(AccessToken)>isValidForAccessToken</a>(<a href=../AccessToken.html>AccessToken</a> accessToken)</pre>
+                                        <div class="block"><p>Determines if the logger is valid for the given access token.</p></div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>accessToken</code> - The access token to check.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="logSdkEvent(String,Double,Bundle)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>logSdkEvent</h4>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = ) final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=AppEventsLogger.html#logSdkEvent(String,Double,Bundle)>logSdkEvent</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> eventName, <a href=https://developer.android.com/reference/kotlin/java/lang/Double.html>Double</a> valueToSum, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</pre>
+                                        <div class="block"><p>This method is only for internal and use by the Facebook SDK account kit for legacy reason. Other usage is not allowed.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer role="contentinfo">
+    <nav role="navigation">
+        <!-- ======= START OF BOTTOM NAVBAR ====== -->
+        <div class="bottomNav"><a id="navbar.bottom">
+            <!--   -->
+        </a>
+            <div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a>
+            </div>
+            <a id="navbar.bottom.firstrow">
+                <!--   -->
+            </a>
+            <ul class="navList" title="Navigation">
+    <li><a href="../../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+        <a id="skip.navbar.bottom">
+            <!--   -->
+        </a>
+        <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ======== END OF BOTTOM NAVBAR ======= -->
+    </nav>
+</footer><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0"
+    style="display: none;"></ul>
+<span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span>
+</body>
+</html>

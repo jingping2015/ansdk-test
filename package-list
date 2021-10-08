@@ -1,0 +1,229 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.facebook.appevents.aam/MetadataRule.Companion///PointingToDeclaration/com/facebook/appevents/aam/MetadataRule.Companion.html
+$dokka.location:com.facebook.appevents.codeless.internal/EventBinding.ActionType///PointingToDeclaration/com/facebook/appevents/codeless/internal/EventBinding.ActionType.html
+$dokka.location:com.facebook.appevents.codeless.internal/EventBinding.Companion///PointingToDeclaration/com/facebook/appevents/codeless/internal/EventBinding.Companion.html
+$dokka.location:com.facebook.appevents.codeless.internal/EventBinding.MappingMethod///PointingToDeclaration/com/facebook/appevents/codeless/internal/EventBinding.MappingMethod.html
+$dokka.location:com.facebook.appevents.codeless.internal/ParameterComponent.Companion///PointingToDeclaration/com/facebook/appevents/codeless/internal/ParameterComponent.Companion.html
+$dokka.location:com.facebook.appevents.codeless.internal/PathComponent.Companion///PointingToDeclaration/com/facebook/appevents/codeless/internal/PathComponent.Companion.html
+$dokka.location:com.facebook.appevents.codeless.internal/PathComponent.MatchBitmaskType///PointingToDeclaration/com/facebook/appevents/codeless/internal/PathComponent.MatchBitmaskType.html
+$dokka.location:com.facebook.appevents.codeless/CodelessLoggingEventListener.AutoLoggingOnClickListener///PointingToDeclaration/com/facebook/appevents/codeless/CodelessLoggingEventListener.AutoLoggingOnClickListener.html
+$dokka.location:com.facebook.appevents.codeless/CodelessLoggingEventListener.AutoLoggingOnItemClickListener///PointingToDeclaration/com/facebook/appevents/codeless/CodelessLoggingEventListener.AutoLoggingOnItemClickListener.html
+$dokka.location:com.facebook.appevents.codeless/RCTCodelessLoggingEventListener.AutoLoggingOnTouchListener///PointingToDeclaration/com/facebook/appevents/codeless/RCTCodelessLoggingEventListener.AutoLoggingOnTouchListener.html
+$dokka.location:com.facebook.appevents.codeless/ViewIndexer.Companion///PointingToDeclaration/com/facebook/appevents/codeless/ViewIndexer.Companion.html
+$dokka.location:com.facebook.appevents.iap/InAppPurchaseBillingClientWrapper.Companion///PointingToDeclaration/com/facebook/appevents/iap/InAppPurchaseBillingClientWrapper.Companion.html
+$dokka.location:com.facebook.appevents.iap/InAppPurchaseSkuDetailsWrapper.Companion///PointingToDeclaration/com/facebook/appevents/iap/InAppPurchaseSkuDetailsWrapper.Companion.html
+$dokka.location:com.facebook.appevents.internal/AppEventsLoggerUtility.GraphAPIActivityType///PointingToDeclaration/com/facebook/appevents/internal/AppEventsLoggerUtility.GraphAPIActivityType.html
+$dokka.location:com.facebook.appevents.internal/FileDownloadTask.Callback///PointingToDeclaration/com/facebook/appevents/internal/FileDownloadTask.Callback.html
+$dokka.location:com.facebook.appevents.ml/MTensor.Companion///PointingToDeclaration/com/facebook/appevents/ml/MTensor.Companion.html
+$dokka.location:com.facebook.appevents.ml/Model.Companion///PointingToDeclaration/com/facebook/appevents/ml/Model.Companion.html
+$dokka.location:com.facebook.appevents.ml/ModelManager.Task///PointingToDeclaration/com/facebook/appevents/ml/ModelManager.Task.html
+$dokka.location:com.facebook.appevents.ondeviceprocessing/RemoteServiceWrapper.EventType///PointingToDeclaration/com/facebook/appevents/ondeviceprocessing/RemoteServiceWrapper.EventType.html
+$dokka.location:com.facebook.appevents.ondeviceprocessing/RemoteServiceWrapper.ServiceResult///PointingToDeclaration/com/facebook/appevents/ondeviceprocessing/RemoteServiceWrapper.ServiceResult.html
+$dokka.location:com.facebook.appevents.suggestedevents/ViewOnClickListener.Companion///PointingToDeclaration/com/facebook/appevents/suggestedevents/ViewOnClickListener.Companion.html
+$dokka.location:com.facebook.appevents/AccessTokenAppIdPair.Companion///PointingToDeclaration/com/facebook/appevents/AccessTokenAppIdPair.Companion.html
+$dokka.location:com.facebook.appevents/AppEvent.Companion///PointingToDeclaration/com/facebook/appevents/AppEvent.Companion.html
+$dokka.location:com.facebook.appevents/AppEventsLogger.Companion///PointingToDeclaration/com/facebook/appevents/AppEventsLogger.Companion.html
+$dokka.location:com.facebook.appevents/AppEventsLogger.FlushBehavior///PointingToDeclaration/com/facebook/appevents/AppEventsLogger.FlushBehavior.html
+$dokka.location:com.facebook.appevents/AppEventsLogger.ProductAvailability///PointingToDeclaration/com/facebook/appevents/AppEventsLogger.ProductAvailability.html
+$dokka.location:com.facebook.appevents/AppEventsLogger.ProductCondition///PointingToDeclaration/com/facebook/appevents/AppEventsLogger.ProductCondition.html
+$dokka.location:com.facebook.appevents/InternalAppEventsLogger.Companion///PointingToDeclaration/com/facebook/appevents/InternalAppEventsLogger.Companion.html
+$dokka.location:com.facebook.appevents/PerformanceGuardian.UseCase///PointingToDeclaration/com/facebook/appevents/PerformanceGuardian.UseCase.html
+$dokka.location:com.facebook.applinks/AppLinkData.CompletionHandler///PointingToDeclaration/com/facebook/applinks/AppLinkData.CompletionHandler.html
+$dokka.location:com.facebook.bolts/AggregateException.Companion///PointingToDeclaration/com/facebook/bolts/AggregateException.Companion.html
+$dokka.location:com.facebook.bolts/AppLink.Target///PointingToDeclaration/com/facebook/bolts/AppLink.Target.html
+$dokka.location:com.facebook.bolts/Task.Companion///PointingToDeclaration/com/facebook/bolts/Task.Companion.html
+$dokka.location:com.facebook.bolts/Task.TaskCompletionSource///PointingToDeclaration/com/facebook/bolts/Task.TaskCompletionSource.html
+$dokka.location:com.facebook.bolts/Task.UnobservedExceptionHandler///PointingToDeclaration/com/facebook/bolts/Task.UnobservedExceptionHandler.html
+$dokka.location:com.facebook.internal.instrument.crashreport/CrashHandler.Companion///PointingToDeclaration/com/facebook/internal/instrument/crashreport/CrashHandler.Companion.html
+$dokka.location:com.facebook.internal.instrument.errorreport/ErrorReportData.Companion///PointingToDeclaration/com/facebook/internal/instrument/errorreport/ErrorReportData.Companion.html
+$dokka.location:com.facebook.internal.instrument/InstrumentData.Builder///PointingToDeclaration/com/facebook/internal/instrument/InstrumentData.Builder.html
+$dokka.location:com.facebook.internal.instrument/InstrumentData.Companion///PointingToDeclaration/com/facebook/internal/instrument/InstrumentData.Companion.html
+$dokka.location:com.facebook.internal.instrument/InstrumentData.Type///PointingToDeclaration/com/facebook/internal/instrument/InstrumentData.Type.html
+$dokka.location:com.facebook.internal.logging.dumpsys/AndroidRootResolver.Companion///PointingToDeclaration/com/facebook/internal/logging/dumpsys/AndroidRootResolver.Companion.html
+$dokka.location:com.facebook.internal.logging.dumpsys/AndroidRootResolver.ListenableArrayList///PointingToDeclaration/com/facebook/internal/logging/dumpsys/AndroidRootResolver.ListenableArrayList.html
+$dokka.location:com.facebook.internal.logging.dumpsys/AndroidRootResolver.Listener///PointingToDeclaration/com/facebook/internal/logging/dumpsys/AndroidRootResolver.Listener.html
+$dokka.location:com.facebook.internal.logging.dumpsys/AndroidRootResolver.Root///PointingToDeclaration/com/facebook/internal/logging/dumpsys/AndroidRootResolver.Root.html
+$dokka.location:com.facebook.internal.logging.dumpsys/EndToEndDumpsysHelper.Companion///PointingToDeclaration/com/facebook/internal/logging/dumpsys/EndToEndDumpsysHelper.Companion.html
+$dokka.location:com.facebook.internal.logging.dumpsys/WebViewDumpHelper.Companion///PointingToDeclaration/com/facebook/internal/logging/dumpsys/WebViewDumpHelper.Companion.html
+$dokka.location:com.facebook.internal/AttributionIdentifiers.Companion///PointingToDeclaration/com/facebook/internal/AttributionIdentifiers.Companion.html
+$dokka.location:com.facebook.internal/BoltsMeasurementEventListener.Companion///PointingToDeclaration/com/facebook/internal/BoltsMeasurementEventListener.Companion.html
+$dokka.location:com.facebook.internal/BundleJSONConverter.Setter///PointingToDeclaration/com/facebook/internal/BundleJSONConverter.Setter.html
+$dokka.location:com.facebook.internal/CallbackManagerImpl.Callback///PointingToDeclaration/com/facebook/internal/CallbackManagerImpl.Callback.html
+$dokka.location:com.facebook.internal/CallbackManagerImpl.Companion///PointingToDeclaration/com/facebook/internal/CallbackManagerImpl.Companion.html
+$dokka.location:com.facebook.internal/CallbackManagerImpl.RequestCodeOffset///PointingToDeclaration/com/facebook/internal/CallbackManagerImpl.RequestCodeOffset.html
+$dokka.location:com.facebook.internal/CollectionMapper.Collection///PointingToDeclaration/com/facebook/internal/CollectionMapper.Collection.html
+$dokka.location:com.facebook.internal/CollectionMapper.OnErrorListener///PointingToDeclaration/com/facebook/internal/CollectionMapper.OnErrorListener.html
+$dokka.location:com.facebook.internal/CollectionMapper.OnMapValueCompleteListener///PointingToDeclaration/com/facebook/internal/CollectionMapper.OnMapValueCompleteListener.html
+$dokka.location:com.facebook.internal/CollectionMapper.OnMapperCompleteListener///PointingToDeclaration/com/facebook/internal/CollectionMapper.OnMapperCompleteListener.html
+$dokka.location:com.facebook.internal/CollectionMapper.ValueMapper///PointingToDeclaration/com/facebook/internal/CollectionMapper.ValueMapper.html
+$dokka.location:com.facebook.internal/DialogPresenter.ParameterProvider///PointingToDeclaration/com/facebook/internal/DialogPresenter.ParameterProvider.html
+$dokka.location:com.facebook.internal/FacebookInitProvider.Companion///PointingToDeclaration/com/facebook/internal/FacebookInitProvider.Companion.html
+$dokka.location:com.facebook.internal/FacebookRequestErrorClassification.Companion///PointingToDeclaration/com/facebook/internal/FacebookRequestErrorClassification.Companion.html
+$dokka.location:com.facebook.internal/FeatureManager.Callback///PointingToDeclaration/com/facebook/internal/FeatureManager.Callback.html
+$dokka.location:com.facebook.internal/FeatureManager.Feature.Companion///PointingToDeclaration/com/facebook/internal/FeatureManager.Feature.Companion.html
+$dokka.location:com.facebook.internal/FeatureManager.Feature///PointingToDeclaration/com/facebook/internal/FeatureManager.Feature.html
+$dokka.location:com.facebook.internal/FetchedAppGateKeepersManager.Callback///PointingToDeclaration/com/facebook/internal/FetchedAppGateKeepersManager.Callback.html
+$dokka.location:com.facebook.internal/FetchedAppSettings.Companion///PointingToDeclaration/com/facebook/internal/FetchedAppSettings.Companion.html
+$dokka.location:com.facebook.internal/FetchedAppSettings.DialogFeatureConfig.Companion///PointingToDeclaration/com/facebook/internal/FetchedAppSettings.DialogFeatureConfig.Companion.html
+$dokka.location:com.facebook.internal/FetchedAppSettings.DialogFeatureConfig///PointingToDeclaration/com/facebook/internal/FetchedAppSettings.DialogFeatureConfig.html
+$dokka.location:com.facebook.internal/FetchedAppSettingsManager.FetchedAppSettingsCallback///PointingToDeclaration/com/facebook/internal/FetchedAppSettingsManager.FetchedAppSettingsCallback.html
+$dokka.location:com.facebook.internal/FileLruCache.Companion///PointingToDeclaration/com/facebook/internal/FileLruCache.Companion.html
+$dokka.location:com.facebook.internal/FileLruCache.Limits///PointingToDeclaration/com/facebook/internal/FileLruCache.Limits.html
+$dokka.location:com.facebook.internal/ImageDownloader.DownloaderContext///PointingToDeclaration/com/facebook/internal/ImageDownloader.DownloaderContext.html
+$dokka.location:com.facebook.internal/ImageDownloader.RequestKey.Companion///PointingToDeclaration/com/facebook/internal/ImageDownloader.RequestKey.Companion.html
+$dokka.location:com.facebook.internal/ImageDownloader.RequestKey///PointingToDeclaration/com/facebook/internal/ImageDownloader.RequestKey.html
+$dokka.location:com.facebook.internal/ImageRequest.Builder///PointingToDeclaration/com/facebook/internal/ImageRequest.Builder.html
+$dokka.location:com.facebook.internal/ImageRequest.Callback///PointingToDeclaration/com/facebook/internal/ImageRequest.Callback.html
+$dokka.location:com.facebook.internal/ImageRequest.Companion///PointingToDeclaration/com/facebook/internal/ImageRequest.Companion.html
+$dokka.location:com.facebook.internal/InstallReferrerUtil.Callback///PointingToDeclaration/com/facebook/internal/InstallReferrerUtil.Callback.html
+$dokka.location:com.facebook.internal/Logger.Companion///PointingToDeclaration/com/facebook/internal/Logger.Companion.html
+$dokka.location:com.facebook.internal/NativeAppCallAttachmentStore.Attachment///PointingToDeclaration/com/facebook/internal/NativeAppCallAttachmentStore.Attachment.html
+$dokka.location:com.facebook.internal/NativeProtocol.NativeAppInfo///PointingToDeclaration/com/facebook/internal/NativeProtocol.NativeAppInfo.html
+$dokka.location:com.facebook.internal/NativeProtocol.ProtocolVersionQueryResult.Companion///PointingToDeclaration/com/facebook/internal/NativeProtocol.ProtocolVersionQueryResult.Companion.html
+$dokka.location:com.facebook.internal/NativeProtocol.ProtocolVersionQueryResult///PointingToDeclaration/com/facebook/internal/NativeProtocol.ProtocolVersionQueryResult.html
+$dokka.location:com.facebook.internal/PlatformServiceClient.CompletedListener///PointingToDeclaration/com/facebook/internal/PlatformServiceClient.CompletedListener.html
+$dokka.location:com.facebook.internal/SmartLoginOption.Companion///PointingToDeclaration/com/facebook/internal/SmartLoginOption.Companion.html
+$dokka.location:com.facebook.internal/Utility.GraphMeRequestWithCacheCallback///PointingToDeclaration/com/facebook/internal/Utility.GraphMeRequestWithCacheCallback.html
+$dokka.location:com.facebook.internal/Utility.Mapper///PointingToDeclaration/com/facebook/internal/Utility.Mapper.html
+$dokka.location:com.facebook.internal/Utility.PermissionsLists///PointingToDeclaration/com/facebook/internal/Utility.PermissionsLists.html
+$dokka.location:com.facebook.internal/Utility.Predicate///PointingToDeclaration/com/facebook/internal/Utility.Predicate.html
+$dokka.location:com.facebook.internal/WebDialog.Builder///PointingToDeclaration/com/facebook/internal/WebDialog.Builder.html
+$dokka.location:com.facebook.internal/WebDialog.InitCallback///PointingToDeclaration/com/facebook/internal/WebDialog.InitCallback.html
+$dokka.location:com.facebook.internal/WebDialog.OnCompleteListener///PointingToDeclaration/com/facebook/internal/WebDialog.OnCompleteListener.html
+$dokka.location:com.facebook.internal/WorkQueue.Companion///PointingToDeclaration/com/facebook/internal/WorkQueue.Companion.html
+$dokka.location:com.facebook.internal/WorkQueue.WorkItem///PointingToDeclaration/com/facebook/internal/WorkQueue.WorkItem.html
+$dokka.location:com.facebook.login.widget/LoginButton.ToolTipMode///PointingToDeclaration/com/facebook/login/widget/LoginButton.ToolTipMode.html
+$dokka.location:com.facebook.login.widget/ProfilePictureView.OnErrorListener///PointingToDeclaration/com/facebook/login/widget/ProfilePictureView.OnErrorListener.html
+$dokka.location:com.facebook.login.widget/ToolTipPopup.Style///PointingToDeclaration/com/facebook/login/widget/ToolTipPopup.Style.html
+$dokka.location:com.facebook.login/LoginConfiguration.Companion///PointingToDeclaration/com/facebook/login/LoginConfiguration.Companion.html
+$dokka.location:com.facebook.login/LoginTargetApp.Companion///PointingToDeclaration/com/facebook/login/LoginTargetApp.Companion.html
+$dokka.location:com.facebook.messenger/MessengerThreadParams.Origin///PointingToDeclaration/com/facebook/messenger/MessengerThreadParams.Origin.html
+$dokka.location:com.facebook.share.internal/CameraEffectJSONUtility.Setter///PointingToDeclaration/com/facebook/share/internal/CameraEffectJSONUtility.Setter.html
+$dokka.location:com.facebook.share.internal/LikeActionController.CreationCallback///PointingToDeclaration/com/facebook/share/internal/LikeActionController.CreationCallback.html
+$dokka.location:com.facebook.share.internal/LikeBoxCountView.LikeBoxCountViewCaretPosition///PointingToDeclaration/com/facebook/share/internal/LikeBoxCountView.LikeBoxCountViewCaretPosition.html
+$dokka.location:com.facebook.share.internal/LikeContent.Builder///PointingToDeclaration/com/facebook/share/internal/LikeContent.Builder.html
+$dokka.location:com.facebook.share.internal/LikeDialog.Result///PointingToDeclaration/com/facebook/share/internal/LikeDialog.Result.html
+$dokka.location:com.facebook.share.internal/OpenGraphJSONUtility.PhotoJSONProcessor///PointingToDeclaration/com/facebook/share/internal/OpenGraphJSONUtility.PhotoJSONProcessor.html
+$dokka.location:com.facebook.share.internal/ShareFeedContent.Builder///PointingToDeclaration/com/facebook/share/internal/ShareFeedContent.Builder.html
+$dokka.location:com.facebook.share.model/AppGroupCreationContent.AppGroupPrivacy///PointingToDeclaration/com/facebook/share/model/AppGroupCreationContent.AppGroupPrivacy.html
+$dokka.location:com.facebook.share.model/AppGroupCreationContent.Builder///PointingToDeclaration/com/facebook/share/model/AppGroupCreationContent.Builder.html
+$dokka.location:com.facebook.share.model/AppInviteContent.Builder.Destination///PointingToDeclaration/com/facebook/share/model/AppInviteContent.Builder.Destination.html
+$dokka.location:com.facebook.share.model/AppInviteContent.Builder///PointingToDeclaration/com/facebook/share/model/AppInviteContent.Builder.html
+$dokka.location:com.facebook.share.model/CameraEffectArguments.Builder///PointingToDeclaration/com/facebook/share/model/CameraEffectArguments.Builder.html
+$dokka.location:com.facebook.share.model/CameraEffectTextures.Builder///PointingToDeclaration/com/facebook/share/model/CameraEffectTextures.Builder.html
+$dokka.location:com.facebook.share.model/GameRequestContent.ActionType///PointingToDeclaration/com/facebook/share/model/GameRequestContent.ActionType.html
+$dokka.location:com.facebook.share.model/GameRequestContent.Builder///PointingToDeclaration/com/facebook/share/model/GameRequestContent.Builder.html
+$dokka.location:com.facebook.share.model/GameRequestContent.Filters///PointingToDeclaration/com/facebook/share/model/GameRequestContent.Filters.html
+$dokka.location:com.facebook.share.model/ShareCameraEffectContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareCameraEffectContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareHashtag.Builder///PointingToDeclaration/com/facebook/share/model/ShareHashtag.Builder.html
+$dokka.location:com.facebook.share.model/ShareLinkContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareLinkContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareMedia.Builder///PointingToDeclaration/com/facebook/share/model/ShareMedia.Builder.html
+$dokka.location:com.facebook.share.model/ShareMedia.Type///PointingToDeclaration/com/facebook/share/model/ShareMedia.Type.html
+$dokka.location:com.facebook.share.model/ShareMediaContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareMediaContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareMessengerActionButton.Builder///PointingToDeclaration/com/facebook/share/model/ShareMessengerActionButton.Builder.html
+$dokka.location:com.facebook.share.model/ShareMessengerGenericTemplateContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareMessengerGenericTemplateContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareMessengerGenericTemplateContent.ImageAspectRatio///PointingToDeclaration/com/facebook/share/model/ShareMessengerGenericTemplateContent.ImageAspectRatio.html
+$dokka.location:com.facebook.share.model/ShareMessengerGenericTemplateElement.Builder///PointingToDeclaration/com/facebook/share/model/ShareMessengerGenericTemplateElement.Builder.html
+$dokka.location:com.facebook.share.model/ShareMessengerMediaTemplateContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareMessengerMediaTemplateContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareMessengerMediaTemplateContent.MediaType///PointingToDeclaration/com/facebook/share/model/ShareMessengerMediaTemplateContent.MediaType.html
+$dokka.location:com.facebook.share.model/ShareMessengerOpenGraphMusicTemplateContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareMessengerOpenGraphMusicTemplateContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareMessengerURLActionButton.Builder///PointingToDeclaration/com/facebook/share/model/ShareMessengerURLActionButton.Builder.html
+$dokka.location:com.facebook.share.model/ShareMessengerURLActionButton.WebviewHeightRatio///PointingToDeclaration/com/facebook/share/model/ShareMessengerURLActionButton.WebviewHeightRatio.html
+$dokka.location:com.facebook.share.model/ShareOpenGraphAction.Builder///PointingToDeclaration/com/facebook/share/model/ShareOpenGraphAction.Builder.html
+$dokka.location:com.facebook.share.model/ShareOpenGraphContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareOpenGraphContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareOpenGraphObject.Builder///PointingToDeclaration/com/facebook/share/model/ShareOpenGraphObject.Builder.html
+$dokka.location:com.facebook.share.model/ShareOpenGraphValueContainer.Builder///PointingToDeclaration/com/facebook/share/model/ShareOpenGraphValueContainer.Builder.html
+$dokka.location:com.facebook.share.model/SharePhoto.Builder///PointingToDeclaration/com/facebook/share/model/SharePhoto.Builder.html
+$dokka.location:com.facebook.share.model/SharePhotoContent.Builder///PointingToDeclaration/com/facebook/share/model/SharePhotoContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareStoryContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareStoryContent.Builder.html
+$dokka.location:com.facebook.share.model/ShareVideo.Builder///PointingToDeclaration/com/facebook/share/model/ShareVideo.Builder.html
+$dokka.location:com.facebook.share.model/ShareVideoContent.Builder///PointingToDeclaration/com/facebook/share/model/ShareVideoContent.Builder.html
+$dokka.location:com.facebook.share.widget/AppInviteDialog.Result///PointingToDeclaration/com/facebook/share/widget/AppInviteDialog.Result.html
+$dokka.location:com.facebook.share.widget/CreateAppGroupDialog.Result///PointingToDeclaration/com/facebook/share/widget/CreateAppGroupDialog.Result.html
+$dokka.location:com.facebook.share.widget/GameRequestDialog.Result///PointingToDeclaration/com/facebook/share/widget/GameRequestDialog.Result.html
+$dokka.location:com.facebook.share.widget/JoinAppGroupDialog.Result///PointingToDeclaration/com/facebook/share/widget/JoinAppGroupDialog.Result.html
+$dokka.location:com.facebook.share.widget/LikeView.AuxiliaryViewPosition///PointingToDeclaration/com/facebook/share/widget/LikeView.AuxiliaryViewPosition.html
+$dokka.location:com.facebook.share.widget/LikeView.HorizontalAlignment///PointingToDeclaration/com/facebook/share/widget/LikeView.HorizontalAlignment.html
+$dokka.location:com.facebook.share.widget/LikeView.ObjectType///PointingToDeclaration/com/facebook/share/widget/LikeView.ObjectType.html
+$dokka.location:com.facebook.share.widget/LikeView.OnErrorListener///PointingToDeclaration/com/facebook/share/widget/LikeView.OnErrorListener.html
+$dokka.location:com.facebook.share.widget/LikeView.Style///PointingToDeclaration/com/facebook/share/widget/LikeView.Style.html
+$dokka.location:com.facebook.share.widget/ShareDialog.Mode///PointingToDeclaration/com/facebook/share/widget/ShareDialog.Mode.html
+$dokka.location:com.facebook.share/DeviceShareDialog.Result///PointingToDeclaration/com/facebook/share/DeviceShareDialog.Result.html
+$dokka.location:com.facebook.share/Sharer.Result///PointingToDeclaration/com/facebook/share/Sharer.Result.html
+$dokka.location:com.facebook/AccessToken.AccessTokenCreationCallback///PointingToDeclaration/com/facebook/AccessToken.AccessTokenCreationCallback.html
+$dokka.location:com.facebook/AccessToken.AccessTokenRefreshCallback///PointingToDeclaration/com/facebook/AccessToken.AccessTokenRefreshCallback.html
+$dokka.location:com.facebook/AccessToken.Companion///PointingToDeclaration/com/facebook/AccessToken.Companion.html
+$dokka.location:com.facebook/AccessTokenManager.Companion///PointingToDeclaration/com/facebook/AccessTokenManager.Companion.html
+$dokka.location:com.facebook/AccessTokenManager.FacebookRefreshTokenInfo///PointingToDeclaration/com/facebook/AccessTokenManager.FacebookRefreshTokenInfo.html
+$dokka.location:com.facebook/AccessTokenManager.InstagramRefreshTokenInfo///PointingToDeclaration/com/facebook/AccessTokenManager.InstagramRefreshTokenInfo.html
+$dokka.location:com.facebook/AccessTokenManager.RefreshTokenInfo///PointingToDeclaration/com/facebook/AccessTokenManager.RefreshTokenInfo.html
+$dokka.location:com.facebook/AuthenticationToken.Companion///PointingToDeclaration/com/facebook/AuthenticationToken.Companion.html
+$dokka.location:com.facebook/AuthenticationTokenCache.Companion///PointingToDeclaration/com/facebook/AuthenticationTokenCache.Companion.html
+$dokka.location:com.facebook/AuthenticationTokenClaims.Companion///PointingToDeclaration/com/facebook/AuthenticationTokenClaims.Companion.html
+$dokka.location:com.facebook/AuthenticationTokenHeader.CREATOR///PointingToDeclaration/com/facebook/AuthenticationTokenHeader.CREATOR.html
+$dokka.location:com.facebook/CallbackManager.Factory///PointingToDeclaration/com/facebook/CallbackManager.Factory.html
+$dokka.location:com.facebook/FacebookContentProvider.Companion///PointingToDeclaration/com/facebook/FacebookContentProvider.Companion.html
+$dokka.location:com.facebook/FacebookException.Companion///PointingToDeclaration/com/facebook/FacebookException.Companion.html
+$dokka.location:com.facebook/FacebookOperationCanceledException.Companion///PointingToDeclaration/com/facebook/FacebookOperationCanceledException.Companion.html
+$dokka.location:com.facebook/FacebookRequestError.Category///PointingToDeclaration/com/facebook/FacebookRequestError.Category.html
+$dokka.location:com.facebook/FacebookRequestError.Companion///PointingToDeclaration/com/facebook/FacebookRequestError.Companion.html
+$dokka.location:com.facebook/FacebookRequestError.Range///PointingToDeclaration/com/facebook/FacebookRequestError.Range.html
+$dokka.location:com.facebook/FacebookSdk.InitializeCallback///PointingToDeclaration/com/facebook/FacebookSdk.InitializeCallback.html
+$dokka.location:com.facebook/FacebookSdkNotInitializedException.Companion///PointingToDeclaration/com/facebook/FacebookSdkNotInitializedException.Companion.html
+$dokka.location:com.facebook/FacebookServiceException.Companion///PointingToDeclaration/com/facebook/FacebookServiceException.Companion.html
+$dokka.location:com.facebook/GraphRequest.Callback///PointingToDeclaration/com/facebook/GraphRequest.Callback.html
+$dokka.location:com.facebook/GraphRequest.Companion///PointingToDeclaration/com/facebook/GraphRequest.Companion.html
+$dokka.location:com.facebook/GraphRequest.GraphJSONArrayCallback///PointingToDeclaration/com/facebook/GraphRequest.GraphJSONArrayCallback.html
+$dokka.location:com.facebook/GraphRequest.GraphJSONObjectCallback///PointingToDeclaration/com/facebook/GraphRequest.GraphJSONObjectCallback.html
+$dokka.location:com.facebook/GraphRequest.OnProgressCallback///PointingToDeclaration/com/facebook/GraphRequest.OnProgressCallback.html
+$dokka.location:com.facebook/GraphRequest.ParcelableResourceWithMimeType.Companion///PointingToDeclaration/com/facebook/GraphRequest.ParcelableResourceWithMimeType.Companion.html
+$dokka.location:com.facebook/GraphRequest.ParcelableResourceWithMimeType///PointingToDeclaration/com/facebook/GraphRequest.ParcelableResourceWithMimeType.html
+$dokka.location:com.facebook/GraphRequestAsyncTask.Companion///PointingToDeclaration/com/facebook/GraphRequestAsyncTask.Companion.html
+$dokka.location:com.facebook/GraphRequestBatch.Callback///PointingToDeclaration/com/facebook/GraphRequestBatch.Callback.html
+$dokka.location:com.facebook/GraphRequestBatch.Companion///PointingToDeclaration/com/facebook/GraphRequestBatch.Companion.html
+$dokka.location:com.facebook/GraphRequestBatch.OnProgressCallback///PointingToDeclaration/com/facebook/GraphRequestBatch.OnProgressCallback.html
+$dokka.location:com.facebook/GraphResponse.Companion///PointingToDeclaration/com/facebook/GraphResponse.Companion.html
+$dokka.location:com.facebook/GraphResponse.PagingDirection///PointingToDeclaration/com/facebook/GraphResponse.PagingDirection.html
+$dokka.location:com.facebook/Profile.Companion///PointingToDeclaration/com/facebook/Profile.Companion.html
+$dokka.location:com.facebook/ProfileCache.Companion///PointingToDeclaration/com/facebook/ProfileCache.Companion.html
+$dokka.location:com.facebook/ProfileManager.Companion///PointingToDeclaration/com/facebook/ProfileManager.Companion.html
+com.facebook
+com.facebook.appevents
+com.facebook.appevents.aam
+com.facebook.appevents.codeless
+com.facebook.appevents.codeless.internal
+com.facebook.appevents.eventdeactivation
+com.facebook.appevents.iap
+com.facebook.appevents.integrity
+com.facebook.appevents.internal
+com.facebook.appevents.ml
+com.facebook.appevents.ondeviceprocessing
+com.facebook.appevents.restrictivedatafilter
+com.facebook.appevents.suggestedevents
+com.facebook.applinks
+com.facebook.bolts
+com.facebook.common
+com.facebook.core
+com.facebook.devicerequests.internal
+com.facebook.internal
+com.facebook.internal.gatekeeper
+com.facebook.internal.instrument
+com.facebook.internal.instrument.anrreport
+com.facebook.internal.instrument.crashreport
+com.facebook.internal.instrument.crashshield
+com.facebook.internal.instrument.errorreport
+com.facebook.internal.instrument.threadcheck
+com.facebook.internal.logging.dumpsys
+com.facebook.internal.qualityvalidation
+com.facebook.internal.security
+com.facebook.login
+com.facebook.login.widget
+com.facebook.messenger
+com.facebook.referrals
+com.facebook.share
+com.facebook.share.internal
+com.facebook.share.model
+com.facebook.share.widget
+

@@ -1,0 +1,1335 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en"><head>
+    <title>GraphRequest 11.3.0 API </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="dc.created" content="2020-03-25">
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../dokka-javadoc-stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../jquery/jquery-ui.css" title="Style">
+    <script type="text/javascript" src="../../jquery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../jquery/jquery-migrate-3.0.1.js"></script>
+    <script type="text/javascript" src="../../jquery/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../../search.js"></script>
+    <script async type="text/javascript" src="../../module-search-index.js"></script>
+    <script async type="text/javascript" src="../../package-search-index.js"></script>
+    <script async type="text/javascript" src="../../type-search-index.js"></script>
+    <script async type="text/javascript" src="../../member-search-index.js"></script>
+    <script async type="text/javascript" src="../../tag-search-index.js"></script>
+</head><body>
+<script type="text/javascript">
+var pathtoroot = "../../";
+</script>
+<noscript>
+    <div>JavaScript is disabled on your browser.</div>
+</noscript><header role="banner">
+    <nav role="navigation">
+        <div class="fixedNav">
+            <!-- ========= START OF TOP NAVBAR ======= -->
+            <div class="topNav"><a id="navbar.top">
+                <!--   -->
+            </a>
+                <div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a>
+                </div>
+                <a id="navbar.top.firstrow">
+                    <!--   -->
+                </a>
+                <ul class="navList" title="Navigation">
+    <li><a href="../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+            <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" class="ui-autocomplete-input" autocomplete="off" placeholder="Search">
+<input type="reset" id="reset" value="reset">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ========= END OF TOP NAVBAR ========= -->
+        </div>
+        <div class="navPadding">&nbsp;</div>
+        <script type="text/javascript"><!--
+        $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+        //-->
+        </script>
+    </nav>
+</header>
+
+<main role="main">
+    <div class="header">
+        <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html"></a></div>
+        <h2 title="Class GraphRequest" class="title">Class GraphRequest</h2>
+    </div>
+    <div class="contentContainer">
+        <!-- <ul class="inheritance">
+            <li>java.lang.Object</li>
+            <li>
+                <ul class="inheritance">
+                    <li>adaptation.Adaptation</li>
+                </ul>
+            </li>
+        </ul> TODO inheritance tree -->
+        <div class="description">
+            <ul class="blockList">
+                <li class="blockList">
+                    
+                    <hr>
+                    <pre class="wrap-overflow">
+
+public final class <span class="typeNameLabel"><a href=GraphRequest.html>GraphRequest</a></span>
+
+                    </pre>
+                    <div class="block"><p>A single request to be sent to the Facebook Platform through the <a href=https://developers.facebook.com/docs/reference/api/.html>Graph API</a>. The Request class provides functionality relating to serializing and deserializing requests and responses, making calls in batches (with a single round-trip to the service) and making calls asynchronously.</p><p>The particular service endpoint that a request targets is determined by a graph path (see the .setGraphPath method).</p><p>A Request can be executed either anonymously or representing an authenticated user. In the former case, no AccessToken needs to be specified, while in the latter, an AccessToken must be provided. If requests are executed in a batch, a Facebook application ID must be associated with the batch, either by setting the application ID in the AndroidManifest.xml or via FacebookSdk or by calling the .setDefaultBatchApplicationId method.</p><p>After completion of a request, the AccessToken, if not null and taken from AccessTokenManager, will be checked to determine if its Facebook access token needs to be extended; if so, a request to extend it will be issued in the background.</p></div>
+                </li>
+            </ul>
+        </div>
+        <div class="summary">
+            <ul class="blockList">
+                <li class="blockList">
+                <!-- ======== NESTED CLASS SUMMARY ======== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="nested.class.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Nested Class Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Class</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public class</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="GraphRequest.Companion.html">GraphRequest.Companion</a></span></code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="GraphRequest.Callback.html">GraphRequest.Callback</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Specifies the interface that consumers of the Request class can implement in order to be notified when a particular request completes, either successfully or with an error.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="GraphRequest.OnProgressCallback.html">GraphRequest.OnProgressCallback</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Specifies the interface that consumers of the Request class can implement in order to be notified when a progress is made on a particular request. The frequency of the callbacks can be controlled using <a href=com/facebook/FacebookSdk.html#setOnProgressThreshold(Long)>FacebookSdk.setOnProgressThreshold</a></p></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="GraphRequest.GraphJSONArrayCallback.html">GraphRequest.GraphJSONArrayCallback</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Callback for requests that result in an array of JSONObjects.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>public interface</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="GraphRequest.GraphJSONObjectCallback.html">GraphRequest.GraphJSONObjectCallback</a></span></code>
+                                            </th>
+                                            <td class="colLast"><p>Callback for requests that result in a JSONObject.</p></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>public final class</code></td>
+                                            <th class="colSecond" scope="row"><code><a href="GraphRequest.ParcelableResourceWithMimeType.html">GraphRequest.ParcelableResourceWithMimeType</a></span></code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- =========== FIELD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="field.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Field Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Field</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=AccessToken.html>AccessToken</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#accessToken>accessToken</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#graphPath>graphPath</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#graphObject>graphObject</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#batchEntryName>batchEntryName</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#batchEntryDependsOn>batchEntryDependsOn</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#batchEntryOmitResultOnSuccess>batchEntryOmitResultOnSuccess</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#parameters>parameters</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#tag>tag</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#version>version</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private  <a href=GraphRequest.Callback.html>GraphRequest.Callback</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#callback>callback</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private  <a href=HttpMethod.html>HttpMethod</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#httpMethod>httpMethod</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="rowColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#relativeUrlForBatchedRequest>relativeUrlForBatchedRequest</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr class="altColor">
+                                            <td class="colFirst"><code>private final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code></td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#urlForSingleRequest>urlForSingleRequest</a></code></th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- ======== CONSTRUCTOR SUMMARY ======== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="constructor.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Constructor Summary</h3>
+                                <div class="memberSummary">
+                                    <table>
+                                        <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+                                        <tbody>
+                                        <tr>
+                                            <th class="colFirst" scope="col">Constructor</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+
+                                        
+                                            <tr class="altColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#GraphRequest(AccessToken,String,Bundle,HttpMethod,GraphRequest.Callback,String)">GraphRequest</a></span>(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters, <a href=HttpMethod.html>HttpMethod</a> httpMethod, <a href=GraphRequest.Callback.html>GraphRequest.Callback</a> callback, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> version)</code></th>
+                                                <td class="colLast">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</td>
+                                            </tr>
+                                        
+                                            <tr class="rowColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#GraphRequest(AccessToken,String,Bundle,HttpMethod,GraphRequest.Callback)">GraphRequest</a></span>(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters, <a href=HttpMethod.html>HttpMethod</a> httpMethod, <a href=GraphRequest.Callback.html>GraphRequest.Callback</a> callback)</code></th>
+                                                <td class="colLast">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</td>
+                                            </tr>
+                                        
+                                            <tr class="altColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#GraphRequest(AccessToken,String,Bundle,HttpMethod)">GraphRequest</a></span>(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters, <a href=HttpMethod.html>HttpMethod</a> httpMethod)</code></th>
+                                                <td class="colLast">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</td>
+                                            </tr>
+                                        
+                                            <tr class="rowColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#GraphRequest(AccessToken,String,Bundle)">GraphRequest</a></span>(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</code></th>
+                                                <td class="colLast">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</td>
+                                            </tr>
+                                        
+                                            <tr class="altColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#GraphRequest(AccessToken,String)">GraphRequest</a></span>(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath)</code></th>
+                                                <td class="colLast">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</td>
+                                            </tr>
+                                        
+                                            <tr class="rowColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#GraphRequest(AccessToken)">GraphRequest</a></span>(<a href=AccessToken.html>AccessToken</a> accessToken)</code></th>
+                                                <td class="colLast">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</td>
+                                            </tr>
+                                        
+                                            <tr class="altColor">
+                                                <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a
+                                                        href="#GraphRequest()">GraphRequest</a></span>()</code></th>
+                                                <td class="colLast">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</td>
+                                            </tr>
+                                        
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- =========== ENUM CONSTANT SUMMARY =========== -->
+                    
+                    <!-- ========== METHOD SUMMARY =========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.summary">
+                                <!--   -->
+                            </a>
+                                <h3>Method Summary</h3>
+                                <div class="memberSummary">
+                                    <div role="tablist" aria-orientation="horizontal">
+                                        <button role="tab" aria-selected="true" aria-controls="memberSummary_tabpanel" tabindex="0" onkeydown="switchTab(event)" id="t0" class="activeTableTab">All Methods</button>
+                                        <!-- TODO: Instance and Concrete Methods #1118 -->
+                                    </div>
+                                    <div id="memberSummary_tabpanel" role="tabpanel">
+                                    <table aria-labelledby="t0">
+                                        <tr>
+                                            <th class="colFirst" scope="col">Modifier and Type</th>
+                                            <th class="colSecond" scope="col">Method</th>
+                                            <th class="colLast" scope="col">Description</th>
+                                        </tr>
+                                        
+                                        <tr id="i0" class="altColor">
+                                            <td class="colFirst"><code>final <a href=AccessToken.html>AccessToken</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getAccessToken()>getAccessToken</a>() </code>
+                                            </th>
+                                            <td class="colLast">The access token associated with this request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i1" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setAccessToken(AccessToken)>setAccessToken</a>(<a href=AccessToken.html>AccessToken</a> accessToken) </code>
+                                            </th>
+                                            <td class="colLast">The access token associated with this request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i2" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getGraphPath()>getGraphPath</a>() </code>
+                                            </th>
+                                            <td class="colLast">The graph path of this request, if any.</td>
+                                        </tr>
+                                        
+                                        <tr id="i3" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setGraphPath(String)>setGraphPath</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath) </code>
+                                            </th>
+                                            <td class="colLast">The graph path of this request, if any.</td>
+                                        </tr>
+                                        
+                                        <tr id="i4" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getGraphObject()>getGraphObject</a>() </code>
+                                            </th>
+                                            <td class="colLast">The GraphObject, if any, associated with this request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i5" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setGraphObject(JSONObject)>setGraphObject</a>(<a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a> graphObject) </code>
+                                            </th>
+                                            <td class="colLast">The GraphObject, if any, associated with this request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i6" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getBatchEntryName()>getBatchEntryName</a>() </code>
+                                            </th>
+                                            <td class="colLast">The name of this requests entry in a batched request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i7" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setBatchEntryName(String)>setBatchEntryName</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> batchEntryName) </code>
+                                            </th>
+                                            <td class="colLast">The name of this requests entry in a batched request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i8" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getBatchEntryDependsOn()>getBatchEntryDependsOn</a>() </code>
+                                            </th>
+                                            <td class="colLast">The name of the request that this request entry explicitly depends on in a batched request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i9" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setBatchEntryDependsOn(String)>setBatchEntryDependsOn</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> batchEntryDependsOn) </code>
+                                            </th>
+                                            <td class="colLast">The name of the request that this request entry explicitly depends on in a batched request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i10" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getBatchEntryOmitResultOnSuccess()>getBatchEntryOmitResultOnSuccess</a>() </code>
+                                            </th>
+                                            <td class="colLast">Whether or not this batch entry will return a response if it is successful.</td>
+                                        </tr>
+                                        
+                                        <tr id="i11" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setBatchEntryOmitResultOnSuccess(Boolean)>setBatchEntryOmitResultOnSuccess</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> batchEntryOmitResultOnSuccess) </code>
+                                            </th>
+                                            <td class="colLast">Whether or not this batch entry will return a response if it is successful.</td>
+                                        </tr>
+                                        
+                                        <tr id="i12" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getParameters()>getParameters</a>() </code>
+                                            </th>
+                                            <td class="colLast">The parameters for this request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i13" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setParameters(Bundle)>setParameters</a>(<a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters) </code>
+                                            </th>
+                                            <td class="colLast">The parameters for this request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i14" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getTag()>getTag</a>() </code>
+                                            </th>
+                                            <td class="colLast">The tag on the request; this is an application-defined object that can be used to distinguish between different requests.</td>
+                                        </tr>
+                                        
+                                        <tr id="i15" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setTag(Object)>setTag</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> tag) </code>
+                                            </th>
+                                            <td class="colLast">The tag on the request; this is an application-defined object that can be used to distinguish between different requests.</td>
+                                        </tr>
+                                        
+                                        <tr id="i16" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getVersion()>getVersion</a>() </code>
+                                            </th>
+                                            <td class="colLast">The version of the API that this request will use.</td>
+                                        </tr>
+                                        
+                                        <tr id="i17" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setVersion(String)>setVersion</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> version) </code>
+                                            </th>
+                                            <td class="colLast">The version of the API that this request will use.</td>
+                                        </tr>
+                                        
+                                        <tr id="i18" class="altColor">
+                                            <td class="colFirst"><code>final <a href=GraphRequest.Callback.html>GraphRequest.Callback</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getCallback()>getCallback</a>() </code>
+                                            </th>
+                                            <td class="colLast">The callback which will be called when the request finishes.</td>
+                                        </tr>
+                                        
+                                        <tr id="i19" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setCallback(GraphRequest.Callback)>setCallback</a>(<a href=GraphRequest.Callback.html>GraphRequest.Callback</a> callback) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i20" class="altColor">
+                                            <td class="colFirst"><code>final <a href=HttpMethod.html>HttpMethod</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getHttpMethod()>getHttpMethod</a>() </code>
+                                            </th>
+                                            <td class="colLast">The <a href=HttpMethod.html>HttpMethod</a> to use for this request.</td>
+                                        </tr>
+                                        
+                                        <tr id="i21" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setHttpMethod(HttpMethod)>setHttpMethod</a>(<a href=HttpMethod.html>HttpMethod</a> httpMethod) </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i22" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getRelativeUrlForBatchedRequest()>getRelativeUrlForBatchedRequest</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i23" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#getUrlForSingleRequest()>getUrlForSingleRequest</a>() </code>
+                                            </th>
+                                            <td class="colLast"></td>
+                                        </tr>
+                                        
+                                        <tr id="i24" class="altColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setSkipClientToken(Boolean)>setSkipClientToken</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> skipClientToken) </code>
+                                            </th>
+                                            <td class="colLast">This is an internal function that is not meant to be used by developers.</td>
+                                        </tr>
+                                        
+                                        <tr id="i25" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#setForceApplicationRequest(Boolean)>setForceApplicationRequest</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> forceOverride) </code>
+                                            </th>
+                                            <td class="colLast">This is an internal function that is not meant to be used by developers.</td>
+                                        </tr>
+                                        
+                                        <tr id="i26" class="altColor">
+                                            <td class="colFirst"><code>final <a href=GraphResponse.html>GraphResponse</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#executeAndWait()>executeAndWait</a>() </code>
+                                            </th>
+                                            <td class="colLast">Executes this request on the current thread and blocks while waiting for the response.</td>
+                                        </tr>
+                                        
+                                        <tr id="i27" class="rowColor">
+                                            <td class="colFirst"><code>final <a href=GraphRequestAsyncTask.html>GraphRequestAsyncTask</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#executeAsync()>executeAsync</a>() </code>
+                                            </th>
+                                            <td class="colLast">Executes the request asynchronously.</td>
+                                        </tr>
+                                        
+                                        <tr id="i28" class="altColor">
+                                            <td class="colFirst"><code><a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a></code>
+                                            </td>
+                                            <th class="colSecond" scope="row"><code><a href=GraphRequest.html#toString()>toString</a>() </code>
+                                            </th>
+                                            <td class="colLast">Returns a string representation of this Request, useful for debugging.</td>
+                                        </tr>
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="blockList">
+                                
+                                    <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
+                                        <!--   -->
+                                    </a>
+                                        <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+                                        <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString,
+                                            wait, wait, wait</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="details">
+            <ul class="blockList">
+                <li class="blockList">
+                    <!-- ========= CONSTRUCTOR DETAIL ======== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="constructor.detail">
+                                <!--   -->
+                            </a>
+                                <h3>Constructor Detail</h3>
+                                
+                                <a name="GraphRequest(AccessToken,String,Bundle,HttpMethod,GraphRequest.Callback,String)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>GraphRequest</h4>
+                                        <pre>GraphRequest(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters, <a href=HttpMethod.html>HttpMethod</a> httpMethod, <a href=GraphRequest.Callback.html>GraphRequest.Callback</a> callback, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> version)</pre>
+                                        <div class="block">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>accessToken</code> - the access token to use, or null</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>graphPath</code> - the graph path to retrieve, create, or delete</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parameters</code> - additional parameters to pass along with the Graph API request; parameters must be Strings, Numbers, Bitmaps, Dates, or Byte arrays.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>httpMethod</code> - the <a href=HttpMethod.html>HttpMethod</a> to use for the request, or null for default (HttpMethod.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - a callback that will be called when the request is completed to handle success or error conditions</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>version</code> - the version of the Graph API</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="GraphRequest(AccessToken,String,Bundle,HttpMethod,GraphRequest.Callback)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>GraphRequest</h4>
+                                        <pre>GraphRequest(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters, <a href=HttpMethod.html>HttpMethod</a> httpMethod, <a href=GraphRequest.Callback.html>GraphRequest.Callback</a> callback)</pre>
+                                        <div class="block">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>accessToken</code> - the access token to use, or null</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>graphPath</code> - the graph path to retrieve, create, or delete</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parameters</code> - additional parameters to pass along with the Graph API request; parameters must be Strings, Numbers, Bitmaps, Dates, or Byte arrays.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>httpMethod</code> - the <a href=HttpMethod.html>HttpMethod</a> to use for the request, or null for default (HttpMethod.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>callback</code> - a callback that will be called when the request is completed to handle success or error conditions</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="GraphRequest(AccessToken,String,Bundle,HttpMethod)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>GraphRequest</h4>
+                                        <pre>GraphRequest(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters, <a href=HttpMethod.html>HttpMethod</a> httpMethod)</pre>
+                                        <div class="block">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>accessToken</code> - the access token to use, or null</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>graphPath</code> - the graph path to retrieve, create, or delete</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parameters</code> - additional parameters to pass along with the Graph API request; parameters must be Strings, Numbers, Bitmaps, Dates, or Byte arrays.</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>httpMethod</code> - the <a href=HttpMethod.html>HttpMethod</a> to use for the request, or null for default (HttpMethod.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="GraphRequest(AccessToken,String,Bundle)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>GraphRequest</h4>
+                                        <pre>GraphRequest(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath, <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</pre>
+                                        <div class="block">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>accessToken</code> - the access token to use, or null</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>graphPath</code> - the graph path to retrieve, create, or delete</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>parameters</code> - additional parameters to pass along with the Graph API request; parameters must be Strings, Numbers, Bitmaps, Dates, or Byte arrays.</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="GraphRequest(AccessToken,String)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>GraphRequest</h4>
+                                        <pre>GraphRequest(<a href=AccessToken.html>AccessToken</a> accessToken, <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath)</pre>
+                                        <div class="block">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>accessToken</code> - the access token to use, or null</dd>
+                                            
+                                            
+                                            
+                                            <dd><code>graphPath</code> - the graph path to retrieve, create, or delete</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="GraphRequest(AccessToken)"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>GraphRequest</h4>
+                                        <pre>GraphRequest(<a href=AccessToken.html>AccessToken</a> accessToken)</pre>
+                                        <div class="block">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</div>
+                                        
+                                        <dl>
+                                            <dt><span class="paramLabel">Parameters:</span></dt>
+                                            
+                                            
+                                            <dd><code>accessToken</code> - the access token to use, or null</dd>
+                                            
+                                            
+                                        </dl>
+                                        
+                                    </li>
+                                </ul>
+                                
+                                <a name="GraphRequest()"></a>
+                                <ul class="blockList">
+                                    <li class="blockList">
+                                        <h4>GraphRequest</h4>
+                                        <pre>GraphRequest()</pre>
+                                        <div class="block">Constructs a request with a specific access token, graph path, parameters, and HTTP method.</div>
+                                        
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- ============ METHOD DETAIL ========== -->
+                    
+                    <section role="region">
+                        <ul class="blockList">
+                            <li class="blockList"><a id="method.detail">
+                                <!--   -->
+                            </a>
+                                <h3>Method Detail</h3>
+                                
+                                <a id="getAccessToken()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getAccessToken</h4>
+                                        <pre class="methodSignature"> final <a href=AccessToken.html>AccessToken</a> <a href=GraphRequest.html#getAccessToken()>getAccessToken</a>()</pre>
+                                        <div class="block"><p>The access token associated with this request. Null if none has been specified.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setAccessToken(AccessToken)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setAccessToken</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setAccessToken(AccessToken)>setAccessToken</a>(<a href=AccessToken.html>AccessToken</a> accessToken)</pre>
+                                        <div class="block"><p>The access token associated with this request. Null if none has been specified.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getGraphPath()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getGraphPath</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GraphRequest.html#getGraphPath()>getGraphPath</a>()</pre>
+                                        <div class="block"><p>The graph path of this request, if any. Null if there is none.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setGraphPath(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setGraphPath</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setGraphPath(String)>setGraphPath</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> graphPath)</pre>
+                                        <div class="block"><p>The graph path of this request, if any. Null if there is none.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getGraphObject()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getGraphObject</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a> <a href=GraphRequest.html#getGraphObject()>getGraphObject</a>()</pre>
+                                        <div class="block"><p>The GraphObject, if any, associated with this request. Null if there is none. This is meaningful only for POST requests.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setGraphObject(JSONObject)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setGraphObject</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setGraphObject(JSONObject)>setGraphObject</a>(<a href=https://developer.android.com/reference/kotlin/org/json/JSONObject.html>JSONObject</a> graphObject)</pre>
+                                        <div class="block"><p>The GraphObject, if any, associated with this request. Null if there is none. This is meaningful only for POST requests.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getBatchEntryName()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getBatchEntryName</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GraphRequest.html#getBatchEntryName()>getBatchEntryName</a>()</pre>
+                                        <div class="block"><p>The name of this requests entry in a batched request. Null if none has been specified. This value is only used if this request is submitted as part of a batched request. It can be used to specified dependencies between requests. See <a href=https://developers.facebook.com/docs/reference/api/batch/.html>Batch Requests</a> in the Graph API documentation for more details.</p><p>It must be unique within a particular batch of requests.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBatchEntryName(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBatchEntryName</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setBatchEntryName(String)>setBatchEntryName</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> batchEntryName)</pre>
+                                        <div class="block"><p>The name of this requests entry in a batched request. Null if none has been specified. This value is only used if this request is submitted as part of a batched request. It can be used to specified dependencies between requests. See <a href=https://developers.facebook.com/docs/reference/api/batch/.html>Batch Requests</a> in the Graph API documentation for more details.</p><p>It must be unique within a particular batch of requests.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getBatchEntryDependsOn()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getBatchEntryDependsOn</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GraphRequest.html#getBatchEntryDependsOn()>getBatchEntryDependsOn</a>()</pre>
+                                        <div class="block"><p>The name of the request that this request entry explicitly depends on in a batched request.</p><p>This value is only used if this request is submitted as part of a batched request. It can be used to specified dependencies between requests. See <a href=https://developers.facebook.com/docs/reference/api/batch/.html>Batch Requests</a> in the Graph API documentation for more details.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBatchEntryDependsOn(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBatchEntryDependsOn</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setBatchEntryDependsOn(String)>setBatchEntryDependsOn</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> batchEntryDependsOn)</pre>
+                                        <div class="block"><p>The name of the request that this request entry explicitly depends on in a batched request.</p><p>This value is only used if this request is submitted as part of a batched request. It can be used to specified dependencies between requests. See <a href=https://developers.facebook.com/docs/reference/api/batch/.html>Batch Requests</a> in the Graph API documentation for more details.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getBatchEntryOmitResultOnSuccess()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getBatchEntryOmitResultOnSuccess</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> <a href=GraphRequest.html#getBatchEntryOmitResultOnSuccess()>getBatchEntryOmitResultOnSuccess</a>()</pre>
+                                        <div class="block"><p>Whether or not this batch entry will return a response if it is successful. Only applies if another request entry in the batch specifies this entry as a dependency. Null if none has been specified See <a href=https://developers.facebook.com/docs/reference/api/batch/.html>Batch Requests</a> in the Graph API documentation for more details.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setBatchEntryOmitResultOnSuccess(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setBatchEntryOmitResultOnSuccess</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setBatchEntryOmitResultOnSuccess(Boolean)>setBatchEntryOmitResultOnSuccess</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> batchEntryOmitResultOnSuccess)</pre>
+                                        <div class="block"><p>Whether or not this batch entry will return a response if it is successful. Only applies if another request entry in the batch specifies this entry as a dependency. Null if none has been specified See <a href=https://developers.facebook.com/docs/reference/api/batch/.html>Batch Requests</a> in the Graph API documentation for more details.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getParameters()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getParameters</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> <a href=GraphRequest.html#getParameters()>getParameters</a>()</pre>
+                                        <div class="block"><p>The parameters for this request.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setParameters(Bundle)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setParameters</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setParameters(Bundle)>setParameters</a>(<a href=https://developer.android.com/reference/kotlin/android/os/Bundle.html>Bundle</a> parameters)</pre>
+                                        <div class="block"><p>The parameters for this request.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getTag()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getTag</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> <a href=GraphRequest.html#getTag()>getTag</a>()</pre>
+                                        <div class="block"><p>The tag on the request; this is an application-defined object that can be used to distinguish between different requests. Its value has no effect on the execution of the request.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setTag(Object)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setTag</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setTag(Object)>setTag</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Object.html>Object</a> tag)</pre>
+                                        <div class="block"><p>The tag on the request; this is an application-defined object that can be used to distinguish between different requests. Its value has no effect on the execution of the request.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getVersion()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getVersion</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GraphRequest.html#getVersion()>getVersion</a>()</pre>
+                                        <div class="block"><p>The version of the API that this request will use. By default this is the current API at the time the SDK is released. Only use this if you need to explicitly override.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setVersion(String)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setVersion</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setVersion(String)>setVersion</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> version)</pre>
+                                        <div class="block"><p>The version of the API that this request will use. By default this is the current API at the time the SDK is released. Only use this if you need to explicitly override.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getCallback()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getCallback</h4>
+                                        <pre class="methodSignature"> final <a href=GraphRequest.Callback.html>GraphRequest.Callback</a> <a href=GraphRequest.html#getCallback()>getCallback</a>()</pre>
+                                        <div class="block"><p>The callback which will be called when the request finishes.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setCallback(GraphRequest.Callback)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setCallback</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setCallback(GraphRequest.Callback)>setCallback</a>(<a href=GraphRequest.Callback.html>GraphRequest.Callback</a> callback)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getHttpMethod()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getHttpMethod</h4>
+                                        <pre class="methodSignature"> final <a href=HttpMethod.html>HttpMethod</a> <a href=GraphRequest.html#getHttpMethod()>getHttpMethod</a>()</pre>
+                                        <div class="block"><p>The <a href=HttpMethod.html>HttpMethod</a> to use for this request. Assign null for default (HttpMethod.GET)</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setHttpMethod(HttpMethod)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setHttpMethod</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setHttpMethod(HttpMethod)>setHttpMethod</a>(<a href=HttpMethod.html>HttpMethod</a> httpMethod)</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getRelativeUrlForBatchedRequest()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getRelativeUrlForBatchedRequest</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GraphRequest.html#getRelativeUrlForBatchedRequest()>getRelativeUrlForBatchedRequest</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="getUrlForSingleRequest()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>getUrlForSingleRequest</h4>
+                                        <pre class="methodSignature"> final <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GraphRequest.html#getUrlForSingleRequest()>getUrlForSingleRequest</a>()</pre>
+                                        <div class="block"></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setSkipClientToken(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setSkipClientToken</h4>
+                                        <pre class="methodSignature">@<a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-deprecated/index.html>Deprecated</a>(message = Starting in v13, the SDK will require a client token to be set before making GraphAPI calls.) final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setSkipClientToken(Boolean)>setSkipClientToken</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> skipClientToken)</pre>
+                                        <div class="block"><p>This is an internal function that is not meant to be used by developers.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="setForceApplicationRequest(Boolean)">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>setForceApplicationRequest</h4>
+                                        <pre class="methodSignature"> final <a href=https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html>Unit</a> <a href=GraphRequest.html#setForceApplicationRequest(Boolean)>setForceApplicationRequest</a>(<a href=https://developer.android.com/reference/kotlin/java/lang/Boolean.html>Boolean</a> forceOverride)</pre>
+                                        <div class="block"><p>This is an internal function that is not meant to be used by developers.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="executeAndWait()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>executeAndWait</h4>
+                                        <pre class="methodSignature"> final <a href=GraphResponse.html>GraphResponse</a> <a href=GraphRequest.html#executeAndWait()>executeAndWait</a>()</pre>
+                                        <div class="block"><p>Executes this request on the current thread and blocks while waiting for the response.</p><p>This should only be called if you have transitioned off the UI thread.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="executeAsync()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockList"
+                                          >
+                                    <li class="blockList">
+                                        <h4>executeAsync</h4>
+                                        <pre class="methodSignature"> final <a href=GraphRequestAsyncTask.html>GraphRequestAsyncTask</a> <a href=GraphRequest.html#executeAsync()>executeAsync</a>()</pre>
+                                        <div class="block"><p>Executes the request asynchronously. This function will return immediately, and the request will be processed on a separate thread. In order to process result of a request, or determine whether a request succeeded or failed, a callback must be specified (see the .setCallback method).</p><p>This should only be called from the UI thread.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                                <a id="toString()">
+                                    <!--   -->
+                                </a>
+                                <ul class=
+                                              "blockListLast"
+                                          >
+                                    <li class="blockList">
+                                        <h4>toString</h4>
+                                        <pre class="methodSignature"> <a href=https://developer.android.com/reference/kotlin/java/lang/String.html>String</a> <a href=GraphRequest.html#toString()>toString</a>()</pre>
+                                        <div class="block"><p>Returns a string representation of this Request, useful for debugging.</p></div>
+                                        
+                                        <!-- TODO missing return annotation -->
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </section>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer role="contentinfo">
+    <nav role="navigation">
+        <!-- ======= START OF BOTTOM NAVBAR ====== -->
+        <div class="bottomNav"><a id="navbar.bottom">
+            <!--   -->
+        </a>
+            <div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a>
+            </div>
+            <a id="navbar.bottom.firstrow">
+                <!--   -->
+            </a>
+            <ul class="navList" title="Navigation">
+    <li><a href="../../index.html">Overview</a></li>
+    
+    <li><a href="package-summary.html">Package</a></li>
+    
+    <li class="navBarCell1Rev">Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+        <a id="skip.navbar.bottom">
+            <!--   -->
+        </a>
+        <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ======== END OF BOTTOM NAVBAR ======= -->
+    </nav>
+</footer><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0"
+    style="display: none;"></ul>
+<span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span>
+</body>
+</html>
